@@ -1,0 +1,39 @@
+@font-face {
+     font-family: "ManifaV2-Bold";
+     src: url('./ManifaV2-Bold.ttf');
+}
+
+@font-face {
+     font-family: "ManifaV2-BoldItalics";
+     src: url('./ManifaV2-BoldItalics.ttf');
+}
+
+@font-face {
+     font-family: "ManifaV2-Light";
+     src: url('./ManifaV2-Light.ttf');
+}
+
+@font-face {
+     font-family: "ManifaV2-LightItalics";
+     src: url('./ManifaV2-LightItalics.ttf');
+}
+
+@font-face {
+     font-family: "ManifaV2-Regular";
+     src: url('./ManifaV2-Regular.ttf');
+}
+
+@font-face {
+     font-family: "ManifaV2-RegularItalics";
+     src: url('./ManifaV2-RegularItalics.ttf');
+}
+
+@font-face {
+     font-family: "ManifaV2-SemiBold";
+     src: url('./ManifaV2-SemiBold.ttf');
+}
+
+@font-face {
+     font-family: "ManifaV2-Thin";
+     src: url('./ManifaV2-Thin.ttf');
+}

@@ -1,0 +1,2878 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>My Career - Aramco Branded UI Framework Style Guide</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="bootstrap3/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/ekko-lightbox.css" rel="stylesheet" />
+    <link href="assets/css/styleguide.css" rel="stylesheet"/>
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <link href="assets/css/demo.css" rel="stylesheet" />
+    <link href="assets/css/shards-demo.css" rel="stylesheet" />
+    
+    <script src="assets/js/run_prettify.js"></script>
+</head>
+
+
+<style>
+pre.prettyprint{
+    background-color: #eee;
+    border: 0px;
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: left;
+}
+.atv, .str{
+    color: #05AE0E;
+}
+.tag, .pln, .kwd{
+    color: #3472F7;
+}
+.atn{
+    color: #2C93FF;
+}
+.pln{
+    color: #333;
+}
+.com{
+    color: #999;
+}
+.space-top{
+    margin-top: 50px;
+}
+.btn-primary .caret{
+    border-top-color: #3472F7;
+    color: #3472F7;
+}
+.area-line{
+    border: 1px solid #999;
+    border-left: 0;
+    border-right: 0;
+    color: #666;
+    display: block;
+    margin-top: 20px;
+    padding: 8px 0;
+    text-align: center;
+}
+.area-line a{
+    color: #666;
+}
+.container-fluid{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.table-shopping .td-name{
+	min-width: 130px;
+}
+</style>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+<nav class="navbar navbar-default navbar-transparent navbar-fixed-top" role="navigation" style="min-height: 60px !important; background-color: #404040;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header" style="padding-top: 5px !important;">
+      <button id="menu-toggle" type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar bar1"></span>
+        <span class="icon-bar bar2"></span>
+        <span class="icon-bar bar3"></span>
+      </button>
+      <a href="#">
+           <div class="logo-container">
+                <div class="logo">
+                   <!-- <img src="assets/img/new_logo.png" alt="Saudi Aramco"> -->
+                </div>
+                <div class="brand" style="color: #FFFFFF;">
+                    aramco brand ui framework styleguide (beta)
+                </div>
+            </div>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" data-nav-image="assets/img/thumb.jpg">
+     
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="wrapper">
+    <div class="main">
+        <div class="section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2" id="myScrollspy">
+                <div class="fixed-section">
+                    <ul>                 
+                        <li><a href="#" style="font-weight: bold;">General Guidelines</a></li>       
+                        <li><a href="#logo-row">Logo</a></li>
+                        <li><a href="#colorpatette-row">Color Palette</a></li>
+                        <li><a href="#typography-row">Typography</a></li>
+                        <li><a href="#fonts-row">Fonts</a></li>
+                        <li><a href="#photography-row">Photography</a></li>
+                        <li><a href="#video-row">Video</a></li>
+
+                        <li><a href="#gallerywork-row" style="font-weight: bold;">Detailed Guidelines</a></li>
+                        <li><a href="#gallerywork-row">Gallery of previous work</a></li> 
+
+                        <li><a href="#gridsystem-row" style="font-weight: bold;">Digital Components</a></li>
+                        <li><a href="#gridsystem-row">Grid System</a></li>
+                        <li><a href="#navigation-row">Navigation</a></li>
+                        <li><a href="#buttons-row">Buttons</a></li>
+                        <li><a href="#card-row">Cards</a></li>                       
+                        <li><a href="#footers-row">Footer</a></li>
+                        <li><a href="#tables-row">Tables</a></li>
+                        <li><a href="#collapsable-row">Collapse Panel</a></li>
+                        <li><a href="#sticky-row">Sticky Panel</a></li>
+                        <li><a href="#timeline-row">Timeline</a></li>
+
+                                
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="aramco-container" style="min-height: 2000px;">
+
+    
+    <!-- Logo Section row -->
+        <div class="aramco-row" id="logo-row">
+            <h2> Our global market-facing brand </h2> 
+            <legend></legend>           
+            <p>Our global market-facing brand encompasses our downstream businesses, global representatives, and business-to-business activities that address our global audience.</p>
+            <div class="image-styleguide">
+             <img src="assets/img/assets/AR_LOGO_MRKT_RGB_POS.png" alt="AR_LOGO_MRKT_RGB_POS.png"/>
+            </div>
+
+            <h3> Our institutional brand </h3>
+            <p> our institutional brand represents our corporate center and upstream business. It serves as a vital geopolitical institution and addresses in-kingdom audiences</p>
+            <div class="image-styleguide">
+             <img src="assets/img/assets/SA_LOGO_INST_RGB_POS.png" alt="SA_LOGO_INST_RGB_POS.png"/>
+            </div>
+            
+            <h3> Logo Variations </h3>
+            <ul class="generic-ul">
+               <li> Master brand </li>
+               <li> Descriptors / logo descriptors </li>
+               <li> Size and clear space: </li>
+               <p> Clear space ensures the impact of the company's logo is not diminished by being crowded by other design elements           or logos. This includes looking for the ideal placement when layering the logo on an image so the logo is clearly visible and the brand is easily identified.</p> 
+               <li> Positioning </li>
+               <li> Don'ts </li>
+            </ul>  
+                         
+    </div>
+    <!-- end row -->
+    
+
+    
+
+    <!-- Color Palette row -->
+        <div class="aramco-row" id="colorpatette-row">
+            <h2> Color Palette </h2>
+            <legend></legend>
+            <p>The SA external color palette creates a consistent and contemporary direction that is recognizable. It should be used through applications with the company and outside use only.</p>
+
+            <h3> SA External color palette </h3>
+            <p> our external colour palette reinforces our symbol by bringing to life our vibrant range of greens and blues</p>
+
+            <div class="page-content" style="padding-top:20px !important">              
+                <div class="row">
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #333333"></div>
+                        <span class="title">80% Black</span>
+                        <span class="hex-value">#333333</span>                        
+                      </div>
+                    </div>
+
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #0033A0"></div>
+                        <span class="title">SA dark blue</span>
+                        <span class="hex-value">#0033A0</span>
+                      </div>
+                    </div>
+
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #00A3E0"></div>
+                        <span class="title">SA light blue</span>
+                        <span class="hex-value">#00A3E0</span>
+                      </div>
+                    </div>
+
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #00968F"></div>
+                        <span class="title">SA turquoise</span>
+                        <span class="hex-value">#00968F</span>
+                      </div>
+                    </div>
+                </div>                        
+                <div class="row">
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #00843D"></div>
+                        <span class="title">SA dark green</span>
+                        <span class="hex-value">#00843D</span>                        
+                      </div>
+                    </div>
+
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #84BD00"></div>
+                        <span class="title">SA light green</span>
+                        <span class="hex-value">#84BD00</span>
+                      </div>
+                    </div>
+
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #676A6E"></div>
+                        <span class="title">SA dark gray</span>
+                        <span class="hex-value"> #676A6E</span>
+                      </div>
+                    </div>
+
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #808080"></div>
+                        <span class="title">50% gray</span>
+                        <span class="hex-value">#808080</span>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #C0C0C0"></div>
+                        <span class="title">25% gray</span>
+                        <span class="hex-value">#C0C0C0</span>                        
+                      </div>
+                    </div>
+
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #DADADA"></div>
+                        <span class="title">15% gray</span>
+                        <span class="hex-value">#DADADA</span>
+                      </div>
+                    </div>
+
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #FFFFFF"></div>
+                        <span class="title">White</span>
+                        <span class="hex-value"> #FFFFFF</span>
+                      </div>
+                    </div>
+                </div>
+            </div>    
+
+            <h3> SA Internal color palette </h3>
+            <p> our internal colour palette expands our options for out internal audiences to create depth, vibrancy, and flexibility</p>
+
+            <div class="page-content" style="padding-top:20px !important">              
+
+                <div class="row">
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #F68D2E"></div>
+                        <span class="title">SA Orange</span>
+                        <span class="hex-value">#F68D2E</span>                        
+                      </div>
+                    </div>
+
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #F0B323"></div>
+                        <span class="title">SA Light Orange</span>
+                        <span class="hex-value">#F0B323</span>
+                      </div>
+                    </div>
+
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #E1D100"></div>
+                        <span class="title">SA Yellow</span>
+                        <span class="hex-value">#E1D100</span>
+                      </div>
+                    </div>
+
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #84BD00"></div>
+                        <span class="title">SA Light Green</span>
+                        <span class="hex-value">#84BD00</span>
+                      </div>
+                    </div>
+                </div>                        
+                <div class="row">
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #00843D"></div>
+                        <span class="title">SA dark green</span>
+                        <span class="hex-value">#00843D</span>                        
+                      </div>
+                    </div>
+
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #00968F"></div>
+                        <span class="title">SA Turquoise</span>
+                        <span class="hex-value">#00968F</span>
+                      </div>
+                    </div>
+
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #00A3E0"></div>
+                        <span class="title">SA Light Blue</span>
+                        <span class="hex-value"> #00A3E0</span>
+                      </div>
+                    </div>
+
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #676A6E"></div>
+                        <span class="title">SA Dark Grey</span>
+                        <span class="hex-value">#676A6E</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #0033A0"></div>
+                        <span class="title">SA Dark Blue</span>
+                        <span class="hex-value">#0033A0</span>
+                      </div>
+                    </div>
+
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #702082"></div>
+                        <span class="title">SA Purple</span>
+                        <span class="hex-value">#702082</span>                        
+                      </div>
+                    </div>
+                    
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #D22630"></div>
+                        <span class="title">SA Red</span>
+                        <span class="hex-value"> #D22630</span>
+                      </div>
+                    </div>
+
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #C6007E"></div>
+                        <span class="title">SA Magenta</span>
+                        <span class="hex-value"> #C6007E</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #333333"></div>
+                        <span class="title">80% Black</span>
+                        <span class="hex-value">#333333</span>                        
+                      </div>
+                    </div>
+
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #808080"></div>
+                        <span class="title">50% Gray</span>
+                        <span class="hex-value"> #808080</span>
+                      </div>
+                    </div>
+                    
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #C0C0C0"></div>
+                        <span class="title">25% gray</span>
+                        <span class="hex-value">#C0C0C0</span>                        
+                      </div>
+                    </div>
+
+                    <div class="color-wrapper col-lg-3 col-md-6 col-sm-6">
+                      <div class="color">
+                        <div class="swatch" style="background: #DADADA"></div>
+                        <span class="title">15% gray</span>
+                        <span class="hex-value">#DADADA</span>
+                      </div>
+                    </div>
+                    
+                </div>
+            </div>    
+    </div>
+    <!-- end row -->
+
+
+    <!-- Typography Section row -->
+        <div class="aramco-row" id="typography-row">
+            <h2> Typography </h2> 
+            <legend></legend>    
+            <h3> Typefaces </h3>
+            <ul class="generic-ul">
+               <li> Headlines and Sub-headlines: ManifaV2 </li>
+               <li> Body text: Segoe UI Regular</li>               
+               <p> We use distinct typefaces for communicating in English and Arabic.</p>                
+            </ul>        
+            
+            <h3> Hierarchy </h3>
+            <ul class="generic-ul">
+               <li> Typography structure </li>
+               <li> Font fallbacks - identify fonts when SA fonts is not compatible with browser or software.</li>               
+            </ul>  
+
+            <h3> Typesetting best practices </h3>
+            <ul class="generic-ul">
+               <li> Capitalization </li>
+               <li> Font size</li>               
+               <li> Font weight</li>    
+               <li> Mixing typefaces to create interest, typesetting rules and grids</li>               
+            </ul>
+
+            <h3> Type on color </h3>
+            <ul class="generic-ul">
+               <li> Color themes </li>                             
+            </ul>
+
+            <h3> Typography with images </h3>
+            <ul class="generic-ul">
+               <li> Spacing </li>                             
+               <li> Layout </li>                             
+               <li> Grid systems </li>                             
+            </ul>
+
+            <h3> Capitalization </h3>            
+             <p>
+              The use of all caps letters will be on call to actions buttons, the rest of the web applications will be small caps.
+             </p>                             
+                  
+    </div>
+    <!-- end row -->
+
+
+    <!-- Fonts Section row -->
+        <div class="aramco-row" id="fonts-row">
+            <h2> Font / Web Fonts </h2> 
+            <legend></legend>    
+            <h3> Manifa V2 </h3>
+            <p> ManifaV2 font is used for headers and sub-headers using (light to semi-bold). </p>
+                           
+            <h3> Segoe UI </h3>
+            <p> Segoe UI font is used  for body text and buttons. </p>
+          
+            <h3> Download Fonts </h3>            
+             <p>
+              <a href="assets/img/assets/aramco-manifaV2.zip"class="btn btn-aramco-light-blue" role="button" aria-pressed="true">Download ManifaV2 Fonts <span class="glyphicon glyphicon-download-alt padding-left-eight"></span>  </a>
+              <a href="assets/img/assets/Segoe-UI.zip"class="btn btn-aramco-light-blue" role="button" aria-pressed="true">Download Segoe UI Fonts <span class="glyphicon glyphicon-download-alt padding-left-eight"></span> </a>              
+             </p>                             
+                  
+    </div>
+    <!-- end row -->  
+
+
+    <!-- Fonts Section row -->
+        <div class="aramco-row" id="gallerywork-row">
+            <h2> Gallery of previous work </h2> 
+            <legend></legend>    
+            <h3> My Career </h3>
+            <p> The purpose of My Career Portal to empower employees in managing their career at Saudi Aramco and improve the quality of careeer engagement between employees and management. </p>
+
+            <div class="row justify-content-center">
+              <div class="col-md-12">
+                  <div class="row">
+                      <a href="assets/img/projects/mycareer/Mycareer1.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/mycareer/preview/Mycareer1.png" class="img-fluid">
+                      </a>
+                      <a href="assets/img/projects/mycareer/Mycareer2.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/mycareer/preview/Mycareer2.png" class="img-fluid">
+                      </a>
+                      <a href="assets/img/projects/mycareer/Mycareer3.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/mycareer/preview/Mycareer3.png" class="img-fluid">
+                      </a>
+                  </div>
+                  <br />
+                  <div class="row">
+                      <a href="assets/img/projects/mycareer/Mycareer4.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/mycareer/preview/Mycareer4.png" class="img-fluid">
+                      </a>
+                      <a href="assets/img/projects/mycareer/Mycareer5.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/mycareer/preview/Mycareer5.png" class="img-fluid">
+                      </a>
+                      <a href="assets/img/projects/mycareer/Mycareer6.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/mycareer/preview/Mycareer6.png" class="img-fluid">
+                      </a>
+                  </div>
+                  <br />
+                  <div class="row">
+                      <a href="assets/img/projects/mycareer/Mycareer7.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/mycareer/preview/Mycareer7.png" class="img-fluid">
+                      </a>
+                      <a href="assets/img/projects/mycareer/Mycareer8.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/mycareer/preview/Mycareer8.png" class="img-fluid">
+                      </a>                      
+                  </div>
+              </div>
+            </div>
+
+            <br /> <br />                
+            <h3> Reach Upstream Mobile Application </h3>
+            <p> Reach Upstream app introduces the features and functions of Saudi Aramco Upstream Continuing Excellence (UCE) in the areas of professional and safety compliance training. </p>
+
+            <div class="row justify-content-center">
+              <div class="col-md-12">
+                  <div class="row">
+                      <a href="assets/img/projects/updc/Design_Splash.png" data-toggle="lightbox" data-gallery="updc-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/updc/Design_Splash.png" class="img-fluid">
+                      </a>
+                      <a href="assets/img/projects/updc/Design_Home.png" data-toggle="lightbox" data-gallery="updc-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/updc/Design_Home.png" class="img-fluid">
+                      </a>
+                      <a href="assets/img/projects/updc/Design_Menu.png" data-toggle="lightbox" data-gallery="updc-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/updc/Design_Menu.png" class="img-fluid">
+                      </a>
+                  </div>
+                  <br />
+                  <div class="row">                      
+                      <a href="assets/img/projects/updc/Design_Category_Scroll.png" data-toggle="lightbox" data-gallery="updc-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/updc/Design_Category_Scroll.png" class="img-fluid">
+                      </a>
+                      <a href="assets/img/projects/updc/Design_VRContent_VRGoggle_Step03.png" data-toggle="lightbox" data-gallery="updc-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/updc/Design_VRContent_VRGoggle_Step03.png" class="img-fluid">
+                      </a>
+                      <a href="assets/img/projects/updc/Design_ARContent.png" data-toggle="lightbox" data-gallery="updc-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/updc/Design_ARContent.png" class="img-fluid">
+                      </a>
+                  </div>                  
+              </div>
+            </div>
+
+            <br /> <br />                
+            <h3> Aramco Radio Mobile Application </h3>
+            <p> Saudi Aramco Radio app allow users to listen to Studio 1 FM Saudi Aramco, Studio 2 FM Saudi Aramco on their android and iphone  </p>
+
+            <div class="row justify-content-center">
+              <div class="col-md-12">
+                  <div class="row">
+                      <a href="assets/img/projects/radio/Radio1.png" data-toggle="lightbox" data-gallery="radio-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/radio/Radio1.png" class="img-fluid">
+                      </a>
+                      <a href="assets/img/projects/radio/Radio2.png" data-toggle="lightbox" data-gallery="radio-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/radio/Radio2.png" class="img-fluid">
+                      </a>
+                      <a href="assets/img/projects/radio/Radio3.png" data-toggle="lightbox" data-gallery="radio-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/radio/Radio3.png" class="img-fluid">
+                      </a>
+                  </div>
+                  <br />
+                  <div class="row">
+                      <a href="assets/img/projects/radio/Radio4.png" data-toggle="lightbox" data-gallery="radio-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/radio/Radio4.png" class="img-fluid">
+                      </a>
+                      <a href="assets/img/projects/radio/Radio5.png" data-toggle="lightbox" data-gallery="radio-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/radio/Radio5.png" class="img-fluid">
+                      </a>
+                      <a href="assets/img/projects/radio/Radio6.png" data-toggle="lightbox" data-gallery="radio-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/radio/Radio6.png" class="img-fluid">
+                      </a>
+                  </div>
+                  <br />
+                  <div class="row">
+                      <a href="assets/img/projects/radio/Radio7.png" data-toggle="lightbox" data-gallery="radio-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/radio/Radio7.png" class="img-fluid">
+                      </a>
+                      <a href="assets/img/projects/radio/Radio8.png" data-toggle="lightbox" data-gallery="radio-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/radio/Radio8.png" class="img-fluid">
+                      </a>
+                      <a href="assets/img/projects/radio/Radio9.png" data-toggle="lightbox" data-gallery="radio-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/radio/Radio9.png" class="img-fluid">
+                      </a>
+                  </div>
+                  <br />    
+                  <div class="row">
+                      <a href="assets/img/projects/radio/Radio10.png" data-toggle="lightbox" data-gallery="radio-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/radio/Radio10.png" class="img-fluid">
+                      </a>
+                      <a href="assets/img/projects/radio/Radio11.png" data-toggle="lightbox" data-gallery="radio-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/radio/Radio11.png" class="img-fluid">
+                      </a>
+                      <a href="assets/img/projects/radio/Radio12.png" data-toggle="lightbox" data-gallery="radio-gallery" class="col-sm-4">
+                          <img src="assets/img/projects/radio/Radio12.png" class="img-fluid">
+                      </a>
+                  </div>              
+              </div>
+            </div>
+                    
+                  
+    </div>
+    <!-- end row --> 
+
+
+
+    
+        <!-- Gridsystem row -->
+        <div class="aramco-row" id="gridsystem-row">
+            <h2> Grid System</h2>
+            <legend></legend>
+            <p>See how aspects of the Bootstrap grid system work across multiple devices with a handy table.</p>
+            <table class="table table-bordered table-striped table-responsive">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th class="text-center">
+                    Extra small<br />
+                    <small>&lt;576px</small>
+                  </th>
+                  <th class="text-center">
+                    Small<br />
+                    <small>&ge;576px</small>
+                  </th>
+                  <th class="text-center">
+                    Medium<br />
+                    <small>&ge;768px</small>
+                  </th>
+                  <th class="text-center">
+                    Large<br />
+                    <small>&ge;992px</small>
+                  </th>
+                  <th class="text-center">
+                    Extra large<br />
+                    <small>&ge;1200px</small>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="text-nowrap" scope="row">Grid behavior</th>
+                  <td>Horizontal at all times</td>
+                  <td colspan="4">Collapsed to start, horizontal above breakpoints</td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row">Max container width</th>
+                  <td>None (auto)</td>
+                  <td>540px</td>
+                  <td>720px</td>
+                  <td>960px</td>
+                  <td>1140px</td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row">Class prefix</th>
+                  <td><code>.col-</code></td>
+                  <td><code>.col-sm-</code></td>
+                  <td><code>.col-md-</code></td>
+                  <td><code>.col-lg-</code></td>
+                  <td><code>.col-xl-</code></td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row"># of columns</th>
+                  <td colspan="5">12</td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row">Gutter width</th>
+                  <td colspan="5">30px (15px on each side of a column)</td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row">Nestable</th>
+                  <td colspan="5">Yes</td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row">Offsets</th>
+                  <td colspan="5">Yes</td>
+                </tr>
+                <tr>
+                  <th class="text-nowrap" scope="row">Column ordering</th>
+                  <td colspan="5">Yes</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="widget widget-default">
+                <header class="widget-header">
+                    Stacked-To-Horizontal
+                </header>
+                <div class="widget-body">
+                    <p>Using a single set of <code>.col-md-*</code> grid classes, you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any <code>.row</code>.</p>
+                    <div class="row show-grid">
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                      <div class="col-md-1">.col-md-1</div>
+                  </div>
+                  <div class="row show-grid">
+                      <div class="col-md-8">.col-md-8</div>
+                      <div class="col-md-4">.col-md-4</div>
+                  </div>
+                  <div class="row show-grid">
+                      <div class="col-md-4">.col-md-4</div>
+                      <div class="col-md-4">.col-md-4</div>
+                      <div class="col-md-4">.col-md-4</div>
+                  </div>
+                  <div class="row show-grid">
+                      <div class="col-md-6">.col-md-6</div>
+                      <div class="col-md-6">.col-md-6</div>
+                  </div>
+              </div>
+
+            <br />
+            <div class="area-line">
+            <a data-target="#switchColor" href="javascript: void(0);" data-toggle="collapse">
+                            View Code Snippet
+            </a>
+
+            <div id="switchColor" class="collapse">
+            <pre class="prettyprint">
+                &lt;div class=&quot;row show-grid&quot;&gt; 
+                  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt; 
+                  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt; 
+                  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt; 
+                  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt; 
+                  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt; 
+                  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt; 
+                  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt; 
+                  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt; 
+                  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt; 
+                  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt; 
+                  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt; 
+                  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt; 
+                &lt;/div&gt;
+
+
+                &lt;div class=&quot;row show-grid&quot;&gt; 
+                  &lt;div class=&quot;col-md-8&quot;&gt;.col-md-8&lt;/div&gt; 
+                  &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt; 
+                &lt;/div&gt;
+
+                &lt;div class=&quot;row show-grid&quot;&gt; 
+                  &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt; 
+                  &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt; 
+                  &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt; 
+                &lt;/div&gt;
+
+                &lt;div class=&quot;row show-grid&quot;&gt; 
+                  &lt;div class=&quot;col-md-6&quot;&gt;.col-md-6&lt;/div&gt; 
+                  &lt;div class=&quot;col-md-6&quot;&gt;.col-md-6&lt;/div&gt; 
+                &lt;/div&gt;
+            </pre>
+            </div>
+            </div>
+
+    </div>
+    <!-- end row -->
+
+    <!-- Navigation row -->
+        <div class="aramco-row" id="navigation-row">
+            <h2>Navigation </h2>
+            <legend></legend>
+            <p>
+              Navigation is the act of moving between screens of an app to complete tasks. It’s enabled through several means: dedicated navigation components, embedding navigation behavior into content, and platform affordances.
+            </p> 
+              
+               <!--navbar container --> 
+           <div class="container-full">
+                
+               <div id="navbar" class="navbar-collapse collapse">
+                   <ul class="nav navbar-nav">
+                       
+                       <li class="home"><a href="index.html" class="home active"> <span class="padding-bottom-mainnav"> Home </span> </a></li>
+
+                       <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="padding-bottom-mainnav"> Course catalog </span></a>
+                           <ul class="dropdown-menu">
+                               <li><a href="about-performance.html" class="nav-item-one"> <span> Classes </span> </a></li>
+
+                               <li><a href="#" class="step-padding"> <span> Training &amp; development </span></a></li>
+
+                               <li><a href="#" class="step-padding"> <span> Human resources </span> </a></li>
+
+                               <li><a href="#" class="step-padding"> <span> Upstream professional development </span> </a></li>
+
+                               <li><a href="#" class="step-padding"> <span> Drilling &amp; workover </span> </a></li>
+
+                               <li><a href="#" class="step-padding"> <span> Industrial services </span> </a></li>
+
+                               <li><a href="#" class="step-padding"> <span> Safety &amp; industrial security </span> </a></li>
+
+                               <li><a href="#" class="step-padding"> <span> Engineering </span> </a></li>
+
+                               <li><a href="#" class="step-padding"> <span> Contracting </span> </a></li>
+  
+                              <li><a href="#" class="step-padding"> <span> Information technology </span> </a></li>
+                               
+                               <li><a href="#" class="step-padding-last"> <span> Finance </span> </a></li>
+
+
+                               <li><a href="#"><span>Learning curricula for professionals</span></a></li>
+
+                               <li><a href="#"><span>Learning curricula for industrial jobs </span> <div class="glyphicon glyphicon-new-window"></div> </a> </li>
+                               
+                               <li><a href="#" class="nav-item-last"><span>eLearning courses</span> <div class="glyphicon glyphicon-new-window"></div> </a> </li>
+
+                           </ul>
+                       </li>
+
+                       <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="padding-bottom-mainnav"> Self-development resources </span></a>
+                           <ul class="dropdown-menu">
+
+                               <li><a href="about-performance.html" class="nav-item-one"> <span> Saudi Aramco Libraries </span> </a></li>
+
+                               <li><a href="#" class="step-padding"> <span> Corporate Library </span></a></li>
+
+                               <li><a href="#" class="step-padding"> <span> Technical Information Center (TIC) </span> </a></li>
+
+                               <li><a href="#" class="step-padding"> <span> Training &amp; Development Library </span> </a></li>
+
+                               <li><a href="#"><span>Online Books</span></a></li>
+
+                               <li><a href="#"><span>Online Professional Databases </span> <div class="glyphicon glyphicon-new-window"></div> </a> </li>
+                               
+                               <li><a href="#" class="nav-item-last"><span>Online Journals</span> <div class="glyphicon glyphicon-new-window"></div> </a> </li> 
+
+                           </ul>
+                       </li>
+
+                       <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="padding-bottom-mainnav"> My Learning </span></a>
+                           <ul class="dropdown-menu">
+                               <li><a href="about-performance.html" class="nav-item-one"> <span> My Training History </span> </a></li>
+
+                               <li><a href="#" class="step-padding"> <span> Training History </span></a></li>
+
+                               <li><a href="#" class="step-padding-last"> <span> Summary </span> </a></li>
+
+                               <li><a href="#"><span>My Degrees Information</span></a></li>
+
+                               <li><a href="#"><span> My Professional Certificates </span></a> </li>
+
+                               <li><a href="#"><span> My Development Plans </span></a> </li>
+                               
+                               <li><a href="#" class="nav-item-last"><span>Classroom Courses Self-Registration</span> </a> </li>
+
+                           </ul>
+                       </li>  
+
+                       <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="padding-bottom-mainnav"> Professional societies </span></a>
+                           <ul class="dropdown-menu">
+                               <li><a href="about-performance.html" class="nav-item-one"> <span> Internal Societies </span> </a></li>
+                               
+                               <li><a href="#" class="step-padding-last"> <span> Sharek Cops </span> </a></li>
+
+
+                               <li><a href="#"><span>External Societies</span></a></li>
+
+                               <li><a href="#" class="step-padding"> <span> Engineering </span> </a></li> 
+
+                               <li><a href="#" class="step-padding"> <span> Human Resources </span> </a></li> 
+
+                               <li><a href="#" class="step-padding-last"> <span> Information Technology </span> </a></li> 
+    
+                           </ul>
+                       </li> 
+
+                       <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="padding-bottom-mainnav"> Learning providers </span></a>
+                           <ul class="dropdown-menu">
+                               
+                               <li><a href="#" class="nav-item-one"><span>Training &amp; Development </span></a></li>
+
+                               <li><a href="#"><span>Human Resources</span></a></li>
+
+                               <li><a href="#"><span>Upstream Prof. Development</span></a></li>
+
+
+                               <li><a href="#"><span>Drilling &amp; Workover</span></a></li>
+
+                               <li><a href="#"><span> Industrial Services </span> </a> </li>
+                               
+                               <li><a href="#"><span> Safety &amp; Industrial Security </span> </a> </li>
+
+                               <li><a href="#"><span> Engineering </span> </a> </li>
+
+                               <li><a href="#"><span> Contracting </span> </a> </li>
+
+                               <li><a href="#"><span> Information Technology </span> </a> </li>
+
+                               <li><a href="#" class="nav-item-last"><span>Finance, Strategy &amp; Development </span> </a> </li>
+
+                           </ul>
+                       </li> 
+                   </ul>                         
+               </div>
+           </div>
+            </p>  
+            <br />
+                    <div class="area-line">
+                    <a data-target="#buttonNavigation" href="javascript: void(0);" data-toggle="collapse">
+                          View Code Snippet
+                    </a>
+    <div id="buttonNavigation" class="collapse">
+    <pre class="prettyprint">
+        &lt;!--navbar container --&gt; 
+           &lt;div class=&quot;container-full nav-list-padding&quot;&gt;
+               &lt;div class=&quot;navbar-header&quot;&gt;
+                   &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbar&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;navbar&quot;&gt;
+                       &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                       &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                       &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                       &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                   &lt;/button&gt;
+               &lt;/div&gt;
+               &lt;div id=&quot;navbar&quot; class=&quot;navbar-collapse collapse&quot;&gt;
+                   &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                       &lt;li class=&quot;logo-scroll&quot;&gt;&lt;a href=&quot;index.html&quot;&gt;learning portal&lt;/a&gt;&lt;/li&gt;
+                       &lt;li class=&quot;home&quot;&gt;&lt;a href=&quot;index.html&quot; class=&quot;home active&quot;&gt; &lt;span class=&quot;padding-bottom-mainnav&quot;&gt; Home &lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+
+                       &lt;li class=&quot;dropdown&quot;&gt;
+                           &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt; &lt;span class=&quot;padding-bottom-mainnav&quot;&gt; Course catalog &lt;/span&gt;&lt;/a&gt;
+                           &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                               &lt;li&gt;&lt;a href=&quot;about-performance.html&quot; class=&quot;nav-item-one&quot;&gt; &lt;span&gt; Classes &lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;step-padding&quot;&gt; &lt;span&gt; Training &amp;amp; development &lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;step-padding&quot;&gt; &lt;span&gt; Human resources &lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;step-padding&quot;&gt; &lt;span&gt; Upstream professional development &lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;step-padding&quot;&gt; &lt;span&gt; Drilling &amp;amp; workover &lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;step-padding&quot;&gt; &lt;span&gt; Industrial services &lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;step-padding&quot;&gt; &lt;span&gt; Safety &amp;amp; industrial security &lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;step-padding&quot;&gt; &lt;span&gt; Engineering &lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;step-padding&quot;&gt; &lt;span&gt; Contracting &lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+  
+                              &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;step-padding&quot;&gt; &lt;span&gt; Information technology &lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+                               
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;step-padding-last&quot;&gt; &lt;span&gt; Finance &lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;Learning curricula for professionals&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;Learning curricula for industrial jobs &lt;/span&gt; &lt;div class=&quot;glyphicon glyphicon-new-window&quot;&gt;&lt;/div&gt; &lt;/a&gt; &lt;/li&gt;
+                               
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;nav-item-last&quot;&gt;&lt;span&gt;eLearning courses&lt;/span&gt; &lt;div class=&quot;glyphicon glyphicon-new-window&quot;&gt;&lt;/div&gt; &lt;/a&gt; &lt;/li&gt;
+
+                           &lt;/ul&gt;
+                       &lt;/li&gt;
+
+                       &lt;li class=&quot;dropdown&quot;&gt;
+                           &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt; &lt;span class=&quot;padding-bottom-mainnav&quot;&gt; Self-development resources &lt;/span&gt;&lt;/a&gt;
+                           &lt;ul class=&quot;dropdown-menu&quot;&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;about-performance.html&quot; class=&quot;nav-item-one&quot;&gt; &lt;span&gt; Saudi Aramco Libraries &lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;step-padding&quot;&gt; &lt;span&gt; Corporate Library &lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;step-padding&quot;&gt; &lt;span&gt; Technical Information Center (TIC) &lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;step-padding&quot;&gt; &lt;span&gt; Training &amp;amp; Development Library &lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;Online Books&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;Online Professional Databases &lt;/span&gt; &lt;div class=&quot;glyphicon glyphicon-new-window&quot;&gt;&lt;/div&gt; &lt;/a&gt; &lt;/li&gt;
+                               
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;nav-item-last&quot;&gt;&lt;span&gt;Online Journals&lt;/span&gt; &lt;div class=&quot;glyphicon glyphicon-new-window&quot;&gt;&lt;/div&gt; &lt;/a&gt; &lt;/li&gt; 
+
+                           &lt;/ul&gt;
+                       &lt;/li&gt;
+
+                       &lt;li class=&quot;dropdown&quot;&gt;
+                           &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt; &lt;span class=&quot;padding-bottom-mainnav&quot;&gt; My Learning &lt;/span&gt;&lt;/a&gt;
+                           &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                               &lt;li&gt;&lt;a href=&quot;about-performance.html&quot; class=&quot;nav-item-one&quot;&gt; &lt;span&gt; My Training History &lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;step-padding&quot;&gt; &lt;span&gt; Training History &lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;step-padding-last&quot;&gt; &lt;span&gt; Summary &lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;My Degrees Information&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt; My Professional Certificates &lt;/span&gt;&lt;/a&gt; &lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt; My Development Plans &lt;/span&gt;&lt;/a&gt; &lt;/li&gt;
+                               
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;nav-item-last&quot;&gt;&lt;span&gt;Classroom Courses Self-Registration&lt;/span&gt; &lt;/a&gt; &lt;/li&gt;
+
+                           &lt;/ul&gt;
+                       &lt;/li&gt;  
+
+                       &lt;li class=&quot;dropdown&quot;&gt;
+                           &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt; &lt;span class=&quot;padding-bottom-mainnav&quot;&gt; Professional societies &lt;/span&gt;&lt;/a&gt;
+                           &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                               &lt;li&gt;&lt;a href=&quot;about-performance.html&quot; class=&quot;nav-item-one&quot;&gt; &lt;span&gt; Internal Societies &lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+                               
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;step-padding-last&quot;&gt; &lt;span&gt; Sharek Cops &lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;External Societies&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;step-padding&quot;&gt; &lt;span&gt; Engineering &lt;/span&gt; &lt;/a&gt;&lt;/li&gt; 
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;step-padding&quot;&gt; &lt;span&gt; Human Resources &lt;/span&gt; &lt;/a&gt;&lt;/li&gt; 
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;step-padding-last&quot;&gt; &lt;span&gt; Information Technology &lt;/span&gt; &lt;/a&gt;&lt;/li&gt; 
+    
+                           &lt;/ul&gt;
+                       &lt;/li&gt; 
+
+                       &lt;li class=&quot;dropdown&quot;&gt;
+                           &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt; &lt;span class=&quot;padding-bottom-mainnav&quot;&gt; Learning providers &lt;/span&gt;&lt;/a&gt;
+                           &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                               
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;nav-item-one&quot;&gt;&lt;span&gt;Training &amp;amp; Development &lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;Human Resources&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;Upstream Prof. Development&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt;Drilling &amp;amp; Workover&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt; Industrial Services &lt;/span&gt; &lt;/a&gt; &lt;/li&gt;
+                               
+                               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt; Safety &amp;amp; Industrial Security &lt;/span&gt; &lt;/a&gt; &lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt; Engineering &lt;/span&gt; &lt;/a&gt; &lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt; Contracting &lt;/span&gt; &lt;/a&gt; &lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span&gt; Information Technology &lt;/span&gt; &lt;/a&gt; &lt;/li&gt;
+
+                               &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;nav-item-last&quot;&gt;&lt;span&gt;Finance, Strategy &amp;amp; Development &lt;/span&gt; &lt;/a&gt; &lt;/li&gt;
+
+                           &lt;/ul&gt;
+                       &lt;/li&gt; 
+                   &lt;/ul&gt;
+
+                   &lt;ul class=&quot;pull-right&quot;&gt;
+                      &lt;li class=&quot;contact-scroll&quot;&gt;
+                        &lt;a class=&quot;contact-header&quot;&gt;For inquries or help &lt;i class=&quot;fa fa-angle-down font-size-sixteen&quot;&gt;&lt;/i&gt; &lt;/a&gt;
+                      &lt;/li&gt;
+                   &lt;/ul&gt;       
+               &lt;/div&gt;
+           &lt;/div&gt;
+    </pre>
+    </div>
+      </div>
+    </div> 
+
+        <!-- buttons row -->
+        <div class="aramco-row" id="buttons-row">
+
+                <h2>Buttons </h2>
+                <legend></legend>
+                <p>
+                  Buttons allow users to take actions, and make choices, with a single tap.
+                </p>
+                <h4>Colors</h4>                    
+                    <p>
+                       <button type="button" class="btn btn-aramco-light-blue">
+                        LIGHT BLUE 
+                      </button>
+                      <button type="button" class="btn btn-aramco-orange">
+                        ORANGE 
+                      </button>
+                      <button type="button" class="btn btn-aramco-light-orange">
+                        LIGHT ORANGE
+                      </button>
+                      <button type="button" class="btn btn-aramco-yellow">
+                        YELLOW
+                      </button>
+                      <button type="button" class="btn btn-aramco-light-green">
+                        LIGHT GREEN
+                      </button>
+                      <button type="button" class="btn btn-aramco-dark-green">
+                        GREEN
+                      </button>
+                      <button type="button" class="btn btn-aramco-turquoise">
+                        TURQUOISE
+                      </button>
+                      <button type="button" class="btn btn-aramco-light-blue">
+                        LIGHT BLUE 
+                      </button>
+                      <button type="button" class="btn btn-aramco-dark-blue">
+                         BLUE 
+                      </button>
+                      <button type="button" class="btn btn-aramco-purple">
+                         PURPLE 
+                      </button>                                           
+                    </p>
+                    <p>
+                      <button type="button" class="btn btn-aramco-magenta">
+                         MAGENTA
+                      </button>   
+                      <button type="button" class="btn btn-aramco-50-gray">
+                         50% GRAY
+                      </button>
+                      <button type="button" class="btn btn-aramco-25-gray">
+                         25% GRAY
+                      </button>
+                    </p>
+                    <br />
+                    <div class="area-line">
+                    <a data-target="#buttonColor" href="javascript: void(0);" data-toggle="collapse">
+                          View Code Snippet
+                    </a>
+    <div id="buttonColor" class="collapse">
+    <pre class="prettyprint">
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-light-blue&quot;&gt;
+  LIGHT BLUE                       
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-orange&quot;&gt;
+  ORANGE
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-light-orange&quot;&gt;
+  LIGHT ORANGE
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-yellow&quot;&gt;
+  YELLOW
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-light-green&quot;&gt;
+  LIGHT GREEN
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-dark-green&quot;&gt;
+  GREEN
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-turquoise&quot;&gt;
+  TURQUOISE 
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-light-blue&quot;&gt;
+  LIGHT BLUE 
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-dark-blue&quot;&gt;
+   BLUE
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-purple&quot;&gt;
+   PURPLE
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-magenta&quot;&gt;
+   MAGENTA
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-50-gray&quot;&gt;
+   50% GRAY
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-25-gray&quot;&gt;
+   25% GRAY
+&lt;/button&gt;
+
+    </pre>
+    </div>
+                    </div>
+
+                <h4>Outline Buttons</h4>                    
+                    <p>
+                      <button type="button" class="btn btn-aramco-light-blue-outline
+                          btn-outline home-cta-width">
+                        LIGHT BLUE
+                        <span class="glyphicon glyphicon-arrow-down padding-left-eight"></span>                     
+                      </button>
+                      <button type="button" class="btn btn-aramco-orange-outline
+                          btn-outline home-cta-width">
+                        ORANGE  
+                        <span class="glyphicon glyphicon-arrow-down padding-left-eight"></span>                     
+                      </button>
+                      <button type="button" class="btn btn-aramco-light-orange-outline
+                          btn-outline home-cta-width">
+                        LIGHT ORANGE
+                        <span class="glyphicon glyphicon-arrow-down padding-left-eight"></span>                     
+                      </button>
+                      <button type="button" class="btn btn-aramco-yellow-outline
+                          btn-outline home-cta-width">
+                         YELLOW  
+                        <span class="glyphicon glyphicon-arrow-down padding-left-eight"></span>                     
+                      </button>
+                    </p>
+                    <p>  
+                      <button type="button" class="btn btn-aramco-light-green-outline
+                          btn-outline home-cta-width">
+                        LIGHT GREEN
+                        <span class="glyphicon glyphicon-arrow-down padding-left-eight"></span>                     
+                      </button>
+                      <button type="button" class="btn btn-aramco-dark-green-outline
+                          btn-outline home-cta-width">
+                        DARK GREEN
+                        <span class="glyphicon glyphicon-arrow-down padding-left-eight"></span>                     
+                      </button>
+                      <button type="button" class="btn btn-aramco-turquoise-outline
+                          btn-outline home-cta-width">
+                        TURQUOISE
+                        <span class="glyphicon glyphicon-arrow-down padding-left-eight"></span>                     
+                      </button>
+                      <button type="button" class="btn btn-aramco-light-blue-outline
+                          btn-outline home-cta-width">
+                        LIGHT BLUE
+                        <span class="glyphicon glyphicon-arrow-down padding-left-eight"></span>                     
+                      </button>
+                    </p>
+                    <p>  
+                      <button type="button" class="btn btn-aramco-dark-blue-outline
+                          btn-outline home-cta-width">
+                        DARK BLUE  
+                        <span class="glyphicon glyphicon-arrow-down padding-left-eight"></span>                     
+                      </button>
+                      <button type="button" class="btn btn-aramco-purple-outline
+                          btn-outline home-cta-width">
+                        PURPLE
+                        <span class="glyphicon glyphicon-arrow-down padding-left-eight"></span>                     
+                      </button>
+                      <button type="button" class="btn btn-aramco-magenta-outline
+                          btn-outline home-cta-width">
+                        MAGENTA
+                        <span class="glyphicon glyphicon-arrow-down padding-left-eight"></span>                     
+                      </button>
+                      <button type="button" class="btn btn-aramco-gray-outline
+                          btn-outline home-cta-width">
+                        GRAY
+                        <span class="glyphicon glyphicon-arrow-down padding-left-eight"></span>                     
+                      </button>
+                    </p>
+                    <p>  
+                      <button type="button" class="btn btn-aramco-black-outline
+                          btn-outline home-cta-width">
+                        BLACK
+                        <span class="glyphicon glyphicon-arrow-down padding-left-eight"></span>                     
+                      </button>
+                      <button type="button" class="btn btn-aramco-white-outline
+                          btn-outline home-cta-width">
+                        WHITE
+                        <span class="glyphicon glyphicon-arrow-down padding-left-eight"></span>                     
+                      </button>
+                     </p> 
+
+                    </p>
+                    <div class="area-line">
+                    <a data-target="#buttonOutline" href="javascript: void(0);" data-toggle="collapse">
+                          View Code Snippet
+                    </a>
+                      <div id="buttonOutline" class="collapse">
+                          <pre class="prettyprint">
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-light-blue-outline
+  btn-outline home-cta-width&quot;&gt;
+Light Blue  
+&lt;span class=&quot;glyphicon glyphicon-arrow-down padding-left-eight&quot;&gt;&lt;/span&gt;                     
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-orange-outline
+  btn-outline home-cta-width&quot;&gt;
+Orange  
+&lt;span class=&quot;glyphicon glyphicon-arrow-down padding-left-eight&quot;&gt;&lt;/span&gt;                     
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-light-orange-outline
+  btn-outline home-cta-width&quot;&gt;
+Light Orange  
+&lt;span class=&quot;glyphicon glyphicon-arrow-down padding-left-eight&quot;&gt;&lt;/span&gt;                     
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-yellow-outline
+  btn-outline home-cta-width&quot;&gt;
+Yellow  
+&lt;span class=&quot;glyphicon glyphicon-arrow-down padding-left-eight&quot;&gt;&lt;/span&gt;                     
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-light-green-outline
+  btn-outline home-cta-width&quot;&gt;
+Light Green  
+&lt;span class=&quot;glyphicon glyphicon-arrow-down padding-left-eight&quot;&gt;&lt;/span&gt;                     
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-dark-green-outline
+  btn-outline home-cta-width&quot;&gt;
+Dark Green
+&lt;span class=&quot;glyphicon glyphicon-arrow-down padding-left-eight&quot;&gt;&lt;/span&gt;                     
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-turquoise-outline
+  btn-outline home-cta-width&quot;&gt;
+Turquoise 
+&lt;span class=&quot;glyphicon glyphicon-arrow-down padding-left-eight&quot;&gt;&lt;/span&gt;                     
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-light-blue-outline
+  btn-outline home-cta-width&quot;&gt;
+Light Blue  
+&lt;span class=&quot;glyphicon glyphicon-arrow-down padding-left-eight&quot;&gt;&lt;/span&gt;                     
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-dark-blue-outline
+  btn-outline home-cta-width&quot;&gt;
+Dark Blue  
+&lt;span class=&quot;glyphicon glyphicon-arrow-down padding-left-eight&quot;&gt;&lt;/span&gt;                     
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-purple-outline
+  btn-outline home-cta-width&quot;&gt;
+Purple
+&lt;span class=&quot;glyphicon glyphicon-arrow-down padding-left-eight&quot;&gt;&lt;/span&gt;                     
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-magenta-outline
+  btn-outline home-cta-width&quot;&gt;
+Magenta
+&lt;span class=&quot;glyphicon glyphicon-arrow-down padding-left-eight&quot;&gt;&lt;/span&gt;                     
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-gray-outline
+  btn-outline home-cta-width&quot;&gt;
+Gray
+&lt;span class=&quot;glyphicon glyphicon-arrow-down padding-left-eight&quot;&gt;&lt;/span&gt;                     
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-black-outline
+  btn-outline home-cta-width&quot;&gt;
+Black
+&lt;span class=&quot;glyphicon glyphicon-arrow-down padding-left-eight&quot;&gt;&lt;/span&gt;                     
+&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-white-outline
+  btn-outline home-cta-width&quot;&gt;
+Black
+&lt;span class=&quot;glyphicon glyphicon-arrow-down padding-left-eight&quot;&gt;&lt;/span&gt;                     
+&lt;/button&gt;
+
+                          </pre>
+                      </div>
+                    </div>
+
+
+                <h4>Sizes</h4>
+                    <p class="space-top">
+                        Buttons come in all needed sizes:
+                    </p>
+                    <p>
+                      <button type="button" class="btn btn-aramco-light-blue btn-lg">LARGE</button> 
+                      <button type="button" class="btn btn-aramco-light-blue">NORMAL</button> 
+                      <button type="button" class="btn btn-aramco-light-blue btn-sm">SMALL</button> 
+                      <button type="button" class="btn btn-aramco-light-blue btn-xs">EXTRA SMALL</button> 
+                    </p>
+                    <div class="area-line">
+                    <a data-target="#buttonSize" href="javascript: void(0);" data-toggle="collapse">
+                          View Code Snippet
+                    </a>
+                      <div id="buttonSize" class="collapse">
+                          <pre class="prettyprint">
+
+                          &lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-light-blue btn-lg&quot;&gt;LARGE&lt;/button&gt;
+
+                          &lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-light-blue&quot;&gt;NORMAL&lt;/button&gt;
+
+                          &lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-light-blue btn-sm&quot;&gt;SMALL&lt;/button&gt;
+
+                          &lt;button type=&quot;button&quot; class=&quot;btn btn-aramco-light-blue btn-xs&quot;&gt;EXTRA SMALL&lt;/button&gt;
+
+                          </pre>
+                      </div>
+                    </div>             
+        </div>
+    <!--     end row -->
+
+      <!-- cards row -->
+        <div class="aramco-row" id="card-row">
+
+              <h1> Cards </h1>
+              <p> Cards are surfaces that display content and actions on a single topic. </p>
+              <p> They should be easy to scan for relevant and actionable information. Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy. </p>
+
+
+              <h2> Category Cards </h2>
+
+              <div class="row">
+                  <div class="col-sm-4 col-md-4">
+                   <div class="card-category">
+                       <div class="image">
+                         <img src="assets/img/courses-self-registration.png" alt="Classroom courses self-registration"/>
+                       </div>
+                       <div class="content">
+                         <p class="category text-sa-black">MY LEARNING</p>
+                         <h4 class="title">Classroom courses self-registration </h4>
+                         <p class="description">Register for classrom courses in your approved Development Plan (IDP).</p>
+                         <div class="footer">
+                           <div class="read-more">
+                             <a class="card-link" href="#">
+                                 Learn More
+                             </a>
+                           </div>
+                         </div>
+                       </div>
+                   </div> <!-- end of card-category -->
+                  </div> <!-- end of col-sm-4 col-md-4 -->  
+
+                  <div class="col-sm-4 col-md-4">
+                    <div class="card-category">
+                      <div class="image">
+                        <img src="assets/img/professinal-certifications.png" alt="View/update your professinal certifications"/>
+                      </div>
+                      <div class="content">
+                        <p class="category text-sa-black">MY LEARNING</p>
+                        <h4 class="title">View/update your professinal certifications </h4>
+                        <p class="description">To view/update your professional certifications awarded by a professional </p>
+                        <div class="footer">
+                          <div class="read-more">
+                            <a class="card-link" href="#">
+                              Learn More
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                  </div> <!-- end of card-category -->                  
+                  </div> <!-- end of col-sm-4 col-md-4 --> 
+
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="card-category">
+                        <div class="content">
+                          <p class="category text-sa-light-blue">performance</p>
+                          <h4 class="title">My Performance </h4>
+                          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae arcu nec tellus…ultrices….</p>
+                          <div class="footer">
+                            <div class="read-more">
+                              <a class="card-link" href="#">
+                                 Learn More
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div> <!-- end of card-category -->
+                  </div> <!-- end of col-lg-4 col-md-4 col-sm-4 --> 
+          
+              </div> <!-- end of row -->
+
+        </div>
+      <!--     end row -->    
+
+      <div class="area-line">
+          <a data-target="#cardTypes" href="javascript: void(0);" data-toggle="collapse">
+                View Code Snippet
+          </a>
+      <div id="cardTypes" class="collapse">
+          <pre class="prettyprint">
+               &lt;div class=&quot;col-sm-4 col-md-4&quot;&gt;
+                   &lt;div class=&quot;card-category&quot;&gt;
+                       &lt;div class=&quot;image&quot;&gt;
+                         &lt;img src=&quot;assets/img/courses-self-registration.png&quot; alt=&quot;Classroom courses self-registration&quot;/&gt;
+                       &lt;/div&gt;
+                       &lt;div class=&quot;content&quot;&gt;
+                         &lt;p class=&quot;category text-sa-black&quot;&gt;MY LEARNING&lt;/p&gt;
+                         &lt;h4 class=&quot;title&quot;&gt;Classroom courses self-registration &lt;/h4&gt;
+                         &lt;p class=&quot;description&quot;&gt;Register for classrom courses in your approved Development Plan (IDP).&lt;/p&gt;
+                         &lt;div class=&quot;footer&quot;&gt;
+                           &lt;div class=&quot;read-more&quot;&gt;
+                             &lt;a class=&quot;card-link&quot; href=&quot;#&quot;&gt;
+                                 Learn More
+                             &lt;/a&gt;
+                           &lt;/div&gt;
+                         &lt;/div&gt;
+                       &lt;/div&gt;
+                   &lt;/div&gt; &lt;!-- end of card-category --&gt;
+                  &lt;/div&gt; &lt;!-- end of col-sm-4 col-md-4 --&gt;           
+          </pre>
+          <pre class="prettyprint">
+               &lt;div class=&quot;col-sm-4 col-md-4&quot;&gt;
+                    &lt;div class=&quot;card-category&quot;&gt;
+                      &lt;div class=&quot;image&quot;&gt;
+                        &lt;img src=&quot;assets/img/professinal-certifications.png&quot; alt=&quot;View/update your professinal certifications&quot;/&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;content&quot;&gt;
+                        &lt;p class=&quot;category text-sa-black&quot;&gt;MY LEARNING&lt;/p&gt;
+                        &lt;h4 class=&quot;title&quot;&gt;View/update your professinal certifications &lt;/h4&gt;
+                        &lt;p class=&quot;description&quot;&gt;To view/update your professional certifications awarded by a professional &lt;/p&gt;
+                        &lt;div class=&quot;footer&quot;&gt;
+                          &lt;div class=&quot;read-more&quot;&gt;
+                            &lt;a class=&quot;card-link&quot; href=&quot;#&quot;&gt;
+                              Learn More
+                            &lt;/a&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                  &lt;/div&gt; &lt;!-- end of card-category --&gt;
+                  &lt;/div&gt; &lt;!-- end of col-sm-4 col-md-4 --&gt;            
+          </pre>
+          <pre class="prettyprint">
+              &lt;div class=&quot;col-lg-4 col-md-4 col-sm-4&quot;&gt;
+                    &lt;div class=&quot;card-category&quot;&gt;
+                        &lt;div class=&quot;content&quot;&gt;
+                          &lt;p class=&quot;category text-sa-light-blue&quot;&gt;performance&lt;/p&gt;
+                          &lt;h4 class=&quot;title&quot;&gt;My Performance &lt;/h4&gt;
+                          &lt;p class=&quot;description&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae arcu nec tellus&hellip;ultrices&hellip;.&lt;/p&gt;
+                          &lt;div class=&quot;footer&quot;&gt;
+                            &lt;div class=&quot;read-more&quot;&gt;
+                              &lt;a class=&quot;card-link&quot; href=&quot;#&quot;&gt;
+                                 Learn More
+                              &lt;/a&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt; &lt;!-- end of card-category --&gt;
+                &lt;/div&gt; &lt;!-- end of col-lg-4 col-md-4 col-sm-4 --&gt;         
+          </pre>
+      </div>
+    </div>
+
+      <h2 style="padding-top:50px;"> Carousel Cards / Horizontal </h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="card-category card-carousel">
+                   <div class="image">
+                       <div id="carousel-4CB" class="carousel slide" data-ride="carousel">
+                           <ol class="carousel-indicators">
+                             <li data-target="#carousel-4CB" data-slide-to="0" class="active"></li>
+                             <li data-target="#carousel-4CB" data-slide-to="1"></li>
+                             <li data-target="#carousel-4CB" data-slide-to="2"></li>
+                             <li data-target="#carousel-4CB" data-slide-to="3"></li>
+                           </ol>
+                           <div class="carousel-inner">
+                             <div class="item active">
+                               <a href="#"><img src="assets/img/4CB/people-conversation-full.png"/></a>
+                             </div>
+                             <div class="item">
+                               <a href="#"><img src="assets/img/4CB/empowerment-full.png" /></a>
+                             </div>
+                             <div class="item">
+                               <a href="#"><img src="assets/img/4CB/collaboration-full.png" /></a>
+                             </div>
+                             <div class="item">
+                               <a href="#"><img src="assets/img/4CB/decision-making-full.png" /></a>
+                             </div>
+                           </div>
+                           <a class="left carousel-control" href="#carousel-4CB" data-slide="prev">
+                             <i class="fa fa-angle-left slide-arrow text-sa-black"></i>
+                           </a>
+                           <a class="right carousel-control" href="#carousel-4CB" data-slide="next">
+                             <i class="fa fa-angle-right slide-arrow text-sa-black"></i>
+                           </a>
+                     </div>
+                 </div>
+                 <div class="content">
+                     <p class="category text-sa-orange">development</p>
+                     <h4 class="title">4 Critical Behaviors</h4>
+                     <p class="description">
+                        Saudi Aramco has identified a challenging new strategy, which will see the company …
+                     </p>
+                     <div class="footer">
+                       <div class="read-more">
+                         <a class="card-link" href="#">
+                            Read More
+                         </a>
+                       </div>
+                     </div>
+                 </div>
+             </div> <!-- end card-carousel -->
+      </div> <!-- end of col-lg-4 col-md-4 col-sm-4 --> 
+      
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="card-horizontal bg-sa-purple">
+          <div class="image">
+            <img src="assets/img/job-swapping.png" alt="job swapping"/>
+          </div>
+          <div class="content">
+            <p class="category text-sa-purple"> OPPORTUNITIES  </p>
+            <h4 class="title">Job Swapping </h4>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae arcu nec tellus…ultrices…. </p>
+            <div class="footer">
+              <div class="read-more">
+                <a class="card-link" href="#">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> <!-- end of card-horizontal -->
+      </div>  <!-- end of col-lg-4 col-md-4 col-sm-4 --> 
+
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="card-category card-posting">
+                        <div class="content">
+                          <p class="category text-sa-purple">opportunities</p>
+                          <h4 class="title">Job Posting </h4>
+                          <p class="description">The Job Posting group provides Saudi Aramco with an internal recruitment service…</p>
+                          <div class="list-news">
+                            <ul>
+                              <li>
+                                <a href="#" target="_blank">
+                                  <div class="posting-title"> <span class="bold"> HR Generalist </span> – Human Resource </div>
+                                </a>
+                              </li>
+                              <li class="clearfix">
+                                <a href="#" target="_blank">
+                                  <div class="posting-title"> <span class="bold"> Career Counselor II </span> – Human Resource </div>
+                                </a>
+                              </li>
+                              <li class="clearfix">
+                                <a href="#" target="_blank">
+                                  <div class="posting-title"> <span class="bold"> Measurement Engineer </span> - Engineering </div>
+                                </a>
+                              </li>
+                              <li class="clearfix">
+                                <a href="#" target="_blank">
+                                  <div class="posting-title"> <span class="bold"> Business Sys Analyst II </span> – Research & Lab </div>
+                                </a>
+                              </li>
+
+                            </ul>
+                          </div>
+
+                          <div class="footer">
+                            <div class="read-more">
+                              <a class="card-link" href="#">
+                                 SEE ALL JOB OPPORTUNITIES
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+        </div> <!-- end of card-category -->
+      </div>  
+
+    </div>
+
+    <div class="area-line">
+        <a data-target="#carouselCardTypes" href="javascript: void(0);" data-toggle="collapse">
+              View Code Snippet
+        </a>
+    <div id="carouselCardTypes" class="collapse">
+        <pre class="prettyprint">
+             &lt;div class=&quot;col-lg-4 col-md-4 col-sm-4&quot;&gt;
+              &lt;div class=&quot;card-category card-carousel&quot;&gt;
+                   &lt;div class=&quot;image&quot;&gt;
+                       &lt;div id=&quot;carousel-4CB&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;
+                           &lt;ol class=&quot;carousel-indicators&quot;&gt;
+                             &lt;li data-target=&quot;#carousel-4CB&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;
+                             &lt;li data-target=&quot;#carousel-4CB&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;
+                             &lt;li data-target=&quot;#carousel-4CB&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;
+                             &lt;li data-target=&quot;#carousel-4CB&quot; data-slide-to=&quot;3&quot;&gt;&lt;/li&gt;
+                           &lt;/ol&gt;
+                           &lt;div class=&quot;carousel-inner&quot;&gt;
+                             &lt;div class=&quot;item active&quot;&gt;
+                               &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;assets/img/4CB/people-conversation-full.png&quot;/&gt;&lt;/a&gt;
+                             &lt;/div&gt;
+                             &lt;div class=&quot;item&quot;&gt;
+                               &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;assets/img/4CB/empowerment-full.png&quot; /&gt;&lt;/a&gt;
+                             &lt;/div&gt;
+                             &lt;div class=&quot;item&quot;&gt;
+                               &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;assets/img/4CB/collaboration-full.png&quot; /&gt;&lt;/a&gt;
+                             &lt;/div&gt;
+                             &lt;div class=&quot;item&quot;&gt;
+                               &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;assets/img/4CB/decision-making-full.png&quot; /&gt;&lt;/a&gt;
+                             &lt;/div&gt;
+                           &lt;/div&gt;
+                           &lt;a class=&quot;left carousel-control&quot; href=&quot;#carousel-4CB&quot; data-slide=&quot;prev&quot;&gt;
+                             &lt;i class=&quot;fa fa-angle-left slide-arrow text-sa-black&quot;&gt;&lt;/i&gt;
+                           &lt;/a&gt;
+                           &lt;a class=&quot;right carousel-control&quot; href=&quot;#carousel-4CB&quot; data-slide=&quot;next&quot;&gt;
+                             &lt;i class=&quot;fa fa-angle-right slide-arrow text-sa-black&quot;&gt;&lt;/i&gt;
+                           &lt;/a&gt;
+                     &lt;/div&gt;
+                 &lt;/div&gt;
+                 &lt;div class=&quot;content&quot;&gt;
+                     &lt;p class=&quot;category text-sa-orange&quot;&gt;development&lt;/p&gt;
+                     &lt;h4 class=&quot;title&quot;&gt;4 Critical Behaviors&lt;/h4&gt;
+                     &lt;p class=&quot;description&quot;&gt;
+                        Saudi Aramco has identified a challenging new strategy, which will see the company &hellip;
+                     &lt;/p&gt;
+                     &lt;div class=&quot;footer&quot;&gt;
+                       &lt;div class=&quot;read-more&quot;&gt;
+                         &lt;a class=&quot;card-link&quot; href=&quot;#&quot;&gt;
+                            Read More
+                         &lt;/a&gt;
+                       &lt;/div&gt;
+                     &lt;/div&gt;
+                 &lt;/div&gt;
+             &lt;/div&gt; &lt;!-- end card-carousel --&gt;
+      &lt;/div&gt; &lt;!-- end of col-lg-4 col-md-4 col-sm-4 --&gt;       
+        </pre>
+        <pre class="prettyprint">
+           &lt;div class=&quot;col-lg-4 col-md-4 col-sm-4&quot;&gt;
+        &lt;div class=&quot;card-horizontal bg-sa-purple&quot;&gt;
+          &lt;div class=&quot;image&quot;&gt;
+            &lt;img src=&quot;assets/img/job-swapping.png&quot; alt=&quot;job swapping&quot;/&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;content&quot;&gt;
+            &lt;p class=&quot;category text-sa-purple&quot;&gt; OPPORTUNITIES  &lt;/p&gt;
+            &lt;h4 class=&quot;title&quot;&gt;Job Swapping &lt;/h4&gt;
+            &lt;p class=&quot;description&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae arcu nec tellus&hellip;ultrices&hellip;. &lt;/p&gt;
+            &lt;div class=&quot;footer&quot;&gt;
+              &lt;div class=&quot;read-more&quot;&gt;
+                &lt;a class=&quot;card-link&quot; href=&quot;#&quot;&gt;
+                  Learn More
+                &lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt; &lt;!-- end of card-horizontal --&gt;
+      &lt;/div&gt;  &lt;!-- end of col-lg-4 col-md-4 col-sm-4 --&gt; 
+        </pre>  
+
+
+        <pre class="prettyprint">
+            &lt;div class=&quot;card-category card-posting&quot;&gt;
+                        &lt;div class=&quot;content&quot;&gt;
+                          &lt;p class=&quot;category text-sa-purple&quot;&gt;opportunities&lt;/p&gt;
+                          &lt;h4 class=&quot;title&quot;&gt;Job Posting &lt;/h4&gt;
+                          &lt;p class=&quot;description&quot;&gt;The Job Posting group provides Saudi Aramco with an internal recruitment service&hellip;&lt;/p&gt;
+                          &lt;div class=&quot;list-news&quot;&gt;
+                            &lt;ul&gt;
+                              &lt;li&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;
+                                  &lt;div class=&quot;posting-title&quot;&gt; &lt;span class=&quot;bold&quot;&gt; HR Generalist &lt;/span&gt; &ndash; Human Resource &lt;/div&gt;
+                                &lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li class=&quot;clearfix&quot;&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;
+                                  &lt;div class=&quot;posting-title&quot;&gt; &lt;span class=&quot;bold&quot;&gt; Career Counselor II &lt;/span&gt; &ndash; Human Resource &lt;/div&gt;
+                                &lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li class=&quot;clearfix&quot;&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;
+                                  &lt;div class=&quot;posting-title&quot;&gt; &lt;span class=&quot;bold&quot;&gt; Measurement Engineer &lt;/span&gt; - Engineering &lt;/div&gt;
+                                &lt;/a&gt;
+                              &lt;/li&gt;
+                              &lt;li class=&quot;clearfix&quot;&gt;
+                                &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;
+                                  &lt;div class=&quot;posting-title&quot;&gt; &lt;span class=&quot;bold&quot;&gt; Business Sys Analyst II &lt;/span&gt; &ndash; Research &amp; Lab &lt;/div&gt;
+                                &lt;/a&gt;
+                              &lt;/li&gt;
+
+                            &lt;/ul&gt;
+                          &lt;/div&gt;
+
+                          &lt;div class=&quot;footer&quot;&gt;
+                            &lt;div class=&quot;read-more&quot;&gt;
+                              &lt;a class=&quot;card-link&quot; href=&quot;#&quot;&gt;
+                                 SEE ALL JOB OPPORTUNITIES
+                              &lt;/a&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+        &lt;/div&gt;
+        </pre>  
+       
+    </div>
+  </div>
+
+
+    <h2 style="padding-top:50px;"> Notification &amp; News Cards  </h2>
+      <div class="row">
+
+        <div class="col-xs-6 col-sm-6 col-md-6"> 
+            <div class="card-notification">
+                  <div class="content">
+                    <p class="title">REMINDERS <span class="badge bg-sa-light-green">2</span> </p>
+                  </div>
+                  <div class="list-news">
+                    <ul>
+                      <li class="clearfix">
+                        <a href="#" target="_blank">
+                          <span class="round glyphicon glyphicon-ok-circle"> </span>
+                          <div class="news-title text-sa-light-blue"> PERFORMANCE MANAGEMENT TIMELINE </div>
+                          <div class="news-description"> Apr 3 ~ Oct 31: Reviewers/employees enter comments; reviewers can request multi-source reviews. </div>
+                        </a>
+                      </li>
+                      <li class="clearfix">
+                        <a href="#" target="_blank">
+                          <span class="round glyphicon glyphicon-ok-circle text-sa-light-green"> </span>
+                          <div class="news-title text-sa-light-blue"> PERFORMANCE MANAGEMENT TIMELINE </div>
+                          <div class="news-description"> Apr 3 ~ Oct 31: Reviewers/employees enter comments; reviewers can request multi-source reviews. </div>
+                        </a>
+                      </li>
+                      <li class="clearfix">
+                        <a href="#" target="_blank">
+                          <span class="round glyphicon glyphicon-ok-circle"> </span>
+                          <div class="news-title text-sa-light-blue"> PERFORMANCE MANAGEMENT TIMELINE </div>
+                          <div class="news-description"> Apr 3 ~ Oct 31: Reviewers/employees enter comments; reviewers can request multi-source reviews. </div>
+                        </a>
+                      </li>
+                      <li class="clearfix">
+                        <a href="#" target="_blank">
+                          <span class="round glyphicon glyphicon-ok-circle text-sa-light-green"> </span>
+                          <div class="news-title text-sa-light-blue"> PERFORMANCE MANAGEMENT TIMELINE </div>
+                          <div class="news-description"> Apr 3 ~ Oct 31: Reviewers/employees enter comments; reviewers can request multi-source reviews. </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="footer">
+                    <div class="read-more">
+                      <a class="card-link" href="#">
+                         Dismiss all
+                      </a>
+                    </div>
+                  </div>
+
+               </div>
+        </div> <!-- end of col-xs-12 col-sm-12 col-md-12 gutter-card -->
+
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="card-news">
+              <div class="content">
+                <p class="category text-sa-light-green"> My Career  </p>
+                <h4 class="title">My Career News </h4>
+              </div>
+              <ul class="list-news">
+                  <li>
+                    <img class="image" src="assets/img/avatar.png" alt="" title="" width="84" height="84">
+                    <div class="news">
+                      <div class="news-description">
+                        <a href="#">
+                          Suspendisse at placerat turpis. Duis luctus erat vel magna pharetra aliquet. Maecenas tincidunt feugiat ultricies. Phasellus et dui risus.
+                        </a>
+                      </div>
+                      <div class="news-meta">
+                        <span>2017 May 21</span>
+                      </div>
+                   </div>
+                  </li>
+                  <li>
+                    <img class="image" src="assets/img/avatar.png" alt="" title="" width="84" height="84">
+                    <div class="news">
+                      <div class="news-description">
+                        <a href="#">
+                          Suspendisse at placerat turpis. Duis luctus erat vel magna pharetra aliquet. Maecenas tincidunt feugiat ultricies. Phasellus et dui risus.
+                        </a>
+                      </div>
+                      <div class="news-meta">
+                        <span>2017 May 21</span>
+                      </div>
+                   </div>
+                  </li>
+                  <li>
+                    <img class="image" src="assets/img/avatar.png" alt="" title="" width="84" height="84">
+                    <div class="news">
+                      <div class="news-description">
+                        <a href="#">
+                          Suspendisse at placerat turpis. Duis luctus erat vel magna pharetra aliquet. Maecenas tincidunt feugiat ultricies. Phasellus et dui risus.
+                        </a>
+                      </div>
+                      <div class="news-meta">
+                        <span>2017 May 21</span>
+                      </div>
+                   </div>
+                  </li>
+               </ul>
+               <div class="footer">
+                 <div class="read-more">
+                   <a class="card-link" href="#">
+                      See More News
+                   </a>
+                 </div>
+               </div>
+           </div>
+        </div>  
+      
+      </div>
+
+    <div class="area-line">
+        <a data-target="#news-notificationCardTypes" href="javascript: void(0);" data-toggle="collapse">
+              View Code Snippet
+        </a>
+    <div id="news-notificationCardTypes" class="collapse">
+        <pre class="prettyprint">                    
+            &lt;div class=&quot;col-xs-6 col-sm-6 col-md-6&quot;&gt; 
+            &lt;div class=&quot;card-notification&quot;&gt;
+                  &lt;div class=&quot;content&quot;&gt;
+                    &lt;p class=&quot;title&quot;&gt;REMINDERS &lt;span class=&quot;badge bg-sa-light-green&quot;&gt;2&lt;/span&gt; &lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;list-news&quot;&gt;
+                    &lt;ul&gt;
+                      &lt;li class=&quot;clearfix&quot;&gt;
+                        &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;
+                          &lt;span class=&quot;round glyphicon glyphicon-ok-circle&quot;&gt; &lt;/span&gt;
+                          &lt;div class=&quot;news-title text-sa-light-blue&quot;&gt; PERFORMANCE MANAGEMENT TIMELINE &lt;/div&gt;
+                          &lt;div class=&quot;news-description&quot;&gt; Apr 3 ~ Oct 31: Reviewers/employees enter comments; reviewers can request multi-source reviews. &lt;/div&gt;
+                        &lt;/a&gt;
+                      &lt;/li&gt;
+                      &lt;li class=&quot;clearfix&quot;&gt;
+                        &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;
+                          &lt;span class=&quot;round glyphicon glyphicon-ok-circle text-sa-light-green&quot;&gt; &lt;/span&gt;
+                          &lt;div class=&quot;news-title text-sa-light-blue&quot;&gt; PERFORMANCE MANAGEMENT TIMELINE &lt;/div&gt;
+                          &lt;div class=&quot;news-description&quot;&gt; Apr 3 ~ Oct 31: Reviewers/employees enter comments; reviewers can request multi-source reviews. &lt;/div&gt;
+                        &lt;/a&gt;
+                      &lt;/li&gt;
+                      &lt;li class=&quot;clearfix&quot;&gt;
+                        &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;
+                          &lt;span class=&quot;round glyphicon glyphicon-ok-circle&quot;&gt; &lt;/span&gt;
+                          &lt;div class=&quot;news-title text-sa-light-blue&quot;&gt; PERFORMANCE MANAGEMENT TIMELINE &lt;/div&gt;
+                          &lt;div class=&quot;news-description&quot;&gt; Apr 3 ~ Oct 31: Reviewers/employees enter comments; reviewers can request multi-source reviews. &lt;/div&gt;
+                        &lt;/a&gt;
+                      &lt;/li&gt;
+                      &lt;li class=&quot;clearfix&quot;&gt;
+                        &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;
+                          &lt;span class=&quot;round glyphicon glyphicon-ok-circle text-sa-light-green&quot;&gt; &lt;/span&gt;
+                          &lt;div class=&quot;news-title text-sa-light-blue&quot;&gt; PERFORMANCE MANAGEMENT TIMELINE &lt;/div&gt;
+                          &lt;div class=&quot;news-description&quot;&gt; Apr 3 ~ Oct 31: Reviewers/employees enter comments; reviewers can request multi-source reviews. &lt;/div&gt;
+                        &lt;/a&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;footer&quot;&gt;
+                    &lt;div class=&quot;read-more&quot;&gt;
+                      &lt;a class=&quot;card-link&quot; href=&quot;#&quot;&gt;
+                         Dismiss all
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+               &lt;/div&gt;
+        &lt;/div&gt; &lt;!-- end of col-xs-6 col-sm-6 col-md-6  --&gt;
+        </pre>
+        <pre class="prettyprint">
+            &lt;div class=&quot;col-xs-6 col-sm-6 col-md-6&quot;&gt; 
+            &lt;div class=&quot;card-notification&quot;&gt;
+                  &lt;div class=&quot;content&quot;&gt;
+                    &lt;p class=&quot;title&quot;&gt;REMINDERS &lt;span class=&quot;badge bg-sa-light-green&quot;&gt;2&lt;/span&gt; &lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;list-news&quot;&gt;
+                    &lt;ul&gt;
+                      &lt;li class=&quot;clearfix&quot;&gt;
+                        &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;
+                          &lt;span class=&quot;round glyphicon glyphicon-ok-circle&quot;&gt; &lt;/span&gt;
+                          &lt;div class=&quot;news-title text-sa-light-blue&quot;&gt; PERFORMANCE MANAGEMENT TIMELINE &lt;/div&gt;
+                          &lt;div class=&quot;news-description&quot;&gt; Apr 3 ~ Oct 31: Reviewers/employees enter comments; reviewers can request multi-source reviews. &lt;/div&gt;
+                        &lt;/a&gt;
+                      &lt;/li&gt;
+                      &lt;li class=&quot;clearfix&quot;&gt;
+                        &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;
+                          &lt;span class=&quot;round glyphicon glyphicon-ok-circle text-sa-light-green&quot;&gt; &lt;/span&gt;
+                          &lt;div class=&quot;news-title text-sa-light-blue&quot;&gt; PERFORMANCE MANAGEMENT TIMELINE &lt;/div&gt;
+                          &lt;div class=&quot;news-description&quot;&gt; Apr 3 ~ Oct 31: Reviewers/employees enter comments; reviewers can request multi-source reviews. &lt;/div&gt;
+                        &lt;/a&gt;
+                      &lt;/li&gt;
+                      &lt;li class=&quot;clearfix&quot;&gt;
+                        &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;
+                          &lt;span class=&quot;round glyphicon glyphicon-ok-circle&quot;&gt; &lt;/span&gt;
+                          &lt;div class=&quot;news-title text-sa-light-blue&quot;&gt; PERFORMANCE MANAGEMENT TIMELINE &lt;/div&gt;
+                          &lt;div class=&quot;news-description&quot;&gt; Apr 3 ~ Oct 31: Reviewers/employees enter comments; reviewers can request multi-source reviews. &lt;/div&gt;
+                        &lt;/a&gt;
+                      &lt;/li&gt;
+                      &lt;li class=&quot;clearfix&quot;&gt;
+                        &lt;a href=&quot;#&quot; target=&quot;_blank&quot;&gt;
+                          &lt;span class=&quot;round glyphicon glyphicon-ok-circle text-sa-light-green&quot;&gt; &lt;/span&gt;
+                          &lt;div class=&quot;news-title text-sa-light-blue&quot;&gt; PERFORMANCE MANAGEMENT TIMELINE &lt;/div&gt;
+                          &lt;div class=&quot;news-description&quot;&gt; Apr 3 ~ Oct 31: Reviewers/employees enter comments; reviewers can request multi-source reviews. &lt;/div&gt;
+                        &lt;/a&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;footer&quot;&gt;
+                    &lt;div class=&quot;read-more&quot;&gt;
+                      &lt;a class=&quot;card-link&quot; href=&quot;#&quot;&gt;
+                         Dismiss all
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+
+               &lt;/div&gt;
+        &lt;/div&gt; &lt;!-- end of col-xs-6 col-sm-6 col-md-6  --&gt;
+         </pre> 
+    </div>
+  </div>
+      
+
+     
+    <!-- footers row -->
+    <div class="aramco-row" id="footers-row" >
+        <h2>Footer / Bottom Navigation</h2>                
+        <p> A footer is an area at the bottom of a document page that contains data common to other pages such as creation dates, copyrights, or references. </p>
+        <footer id="footer">
+          <div class="footer-bottom">
+            <div class="container">
+              <div class="row">
+              </div>
+           </div>
+         </div><!-- .footer-bottom -->
+
+          <div class="footer-top">
+            <div class="container">
+
+            <div class="row sidebar">
+            <aside class="col-xs-12 col-sm-6 col-md-6 widget">
+              <div class="title-block">
+              <h2 class="footer-heading"> For inquries or help </h2>
+
+              <h3 class="title">Email</h3>
+              <span class="timeline-link"> 
+                <span class="tag-href">
+                  <i class="glyphicon glyphicon-envelope"></i>
+                </span> 
+                <span class="text"> Email to T&amp;D Customer Care Center </span>
+                 <i class="fa fa-chevron-right"></i> 
+              </span>
+
+              <div class="block-space">
+                <h3 class="title">Phone 7:00am to 4:00pm, Sunday to Thursday</h3>
+                <span class="timeline-link"> 
+                  <span class="tag-href">
+                    <i class="glyphicon glyphicon-envelope"></i>
+                  </span> 
+                  <span class="text"> 013-874-1333 </span>
+                   <i class="fa fa-chevron-right"></i> 
+                </span>
+              </div>
+
+              <div class="block-space">
+                <h3 class="title">For the listing of all supported programs and functions</h3>
+                <span class="timeline-link"> 
+                  <span class="tag-href">
+                    <i class="glyphicon glyphicon-new-window"></i>
+                  </span> 
+                  <span class="text"> T&amp;D Customer Care Center website </span>
+                   <i class="fa fa-chevron-right"></i> 
+                </span>
+              </div> 
+              
+
+           </aside>
+
+            <aside class="col-xs-12 col-sm-6 col-md-6 widget">
+              <div class="title-block">
+              <h2 class="footer-heading"> Quick links </h2>
+                 <ul class="footer-li">
+                  <li>
+                      <a class="footer-hyperlink" href="#">
+                       Professional Learning <span class="glyphicon glyphicon-new-window"></span>
+                     </a>
+                  </li>  
+                  <li>
+                     <a class="footer-hyperlink" href="#">
+                       ITD Certification Tracking <span class="glyphicon glyphicon-new-window"></span>
+                     </a>
+                  </li> 
+                  <li>
+                     <a class="footer-hyperlink" href="#">
+                       Job Task Standard <span class="glyphicon glyphicon-new-window"></span>
+                     </a>
+                  </li>
+                  <li>
+                     <a class="footer-hyperlink" href="#">
+                       Industrial Certificate Verification <span class="glyphicon glyphicon-new-window"></span>
+                     </a>
+                  </li> 
+                  <li>
+                     <a class="footer-hyperlink" href="#">
+                       Industrial Knowledge Transfer Program <span class="glyphicon glyphicon-new-window"></span>
+                     </a>
+                  </li>   
+                  <li>
+                     <a class="footer-hyperlink" href="#">
+                       Online Testing <span class="glyphicon glyphicon-new-window"></span>
+                     </a>
+                  </li> 
+                  <li>
+                     <a class="footer-hyperlink" href="#">
+                       Safety e-Resources <span class="glyphicon glyphicon-new-window"></span>
+                     </a>
+                  </li> 
+                  <li>
+                     <a class="footer-hyperlink" href="#">
+                       Operator Training Simulations (OTS) <span class="glyphicon glyphicon-new-window"></span>
+                     </a>
+                  </li> 
+                 <ul>
+                             
+              </div>      
+            </aside><!-- .IT Help desk -->
+
+
+            </div>
+          </div>
+          </div><!-- .footer-top -->
+
+          <div class="footer-bottom">
+            <div class="container">
+              <div class="row">
+                <div class="copyright col-xs-12 col-sm-3 col-md-3">
+                    <span class="glyphicon glyphicon-refresh"></span> Last updated on 2017 May 17
+                </div>
+              </div>
+           </div>
+         </div><!-- .footer-bottom -->
+        </footer>
+        <div class="area-line">
+        <a data-target="#snippetFooter" href="javascript: void(0);" data-toggle="collapse">View Code Snippet</a>
+    <div id="snippetFooter" class="collapse">
+    <pre class="prettyprint">
+&lt;footer id=&quot;footer&quot;&gt;
+  &lt;div class=&quot;footer-top&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+
+    &lt;div class=&quot;row sidebar&quot;&gt;
+    &lt;aside class=&quot;col-xs-12 col-sm-6 col-md-6 widget&quot;&gt;
+      &lt;div class=&quot;title-block&quot;&gt;
+      &lt;h2 class=&quot;footer-heading&quot;&gt; For inquries or help &lt;/h2&gt;
+
+      &lt;h3 class=&quot;title&quot;&gt;Email&lt;/h3&gt;
+      &lt;span class=&quot;timeline-link&quot;&gt; 
+        &lt;span class=&quot;tag-href&quot;&gt;
+          &lt;i class=&quot;fa fa-link&quot;&gt;&lt;/i&gt;
+        &lt;/span&gt; 
+        &lt;span class=&quot;text&quot;&gt; Email to T&amp;amp;D Customer Care Center &lt;/span&gt;
+         &lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt; 
+      &lt;/span&gt;
+
+      &lt;div class=&quot;block-space&quot;&gt;
+        &lt;h3 class=&quot;title&quot;&gt;Phone 7:00am to 4:00pm, Sunday to Thursday&lt;/h3&gt;
+        &lt;span class=&quot;timeline-link&quot;&gt; 
+          &lt;span class=&quot;tag-href&quot;&gt;
+            &lt;i class=&quot;fa fa-link&quot;&gt;&lt;/i&gt;
+          &lt;/span&gt; 
+          &lt;span class=&quot;text&quot;&gt; 013-874-1333 &lt;/span&gt;
+           &lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt; 
+        &lt;/span&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;block-space&quot;&gt;
+        &lt;h3 class=&quot;title&quot;&gt;For the listing of all supported programs and functions&lt;/h3&gt;
+        &lt;span class=&quot;timeline-link&quot;&gt; 
+          &lt;span class=&quot;tag-href&quot;&gt;
+            &lt;i class=&quot;glyphicon glyphicon-new-window&quot;&gt;&lt;/i&gt;
+          &lt;/span&gt; 
+          &lt;span class=&quot;text&quot;&gt; T&amp;amp;D Customer Care Center website &lt;/span&gt;
+           &lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt; 
+        &lt;/span&gt;
+      &lt;/div&gt; 
+      
+
+   &lt;/aside&gt;
+
+    &lt;aside class=&quot;col-xs-12 col-sm-6 col-md-6 widget&quot;&gt;
+      &lt;div class=&quot;title-block&quot;&gt;
+      &lt;h2 class=&quot;footer-heading&quot;&gt; Quick links &lt;/h2&gt;
+         &lt;ul class=&quot;footer-li&quot;&gt;
+          &lt;li&gt;
+              &lt;a class=&quot;footer-hyperlink&quot; href=&quot;#&quot;&gt;
+               Professional Learning &lt;span class=&quot;glyphicon glyphicon-new-window&quot;&gt;&lt;/span&gt;
+             &lt;/a&gt;
+          &lt;/li&gt;  
+          &lt;li&gt;
+             &lt;a class=&quot;footer-hyperlink&quot; href=&quot;#&quot;&gt;
+               ITD Certification Tracking &lt;span class=&quot;glyphicon glyphicon-new-window&quot;&gt;&lt;/span&gt;
+             &lt;/a&gt;
+          &lt;/li&gt; 
+          &lt;li&gt;
+             &lt;a class=&quot;footer-hyperlink&quot; href=&quot;#&quot;&gt;
+               Job Task Standard &lt;span class=&quot;glyphicon glyphicon-new-window&quot;&gt;&lt;/span&gt;
+             &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+             &lt;a class=&quot;footer-hyperlink&quot; href=&quot;#&quot;&gt;
+               Industrial Certificate Verification &lt;span class=&quot;glyphicon glyphicon-new-window&quot;&gt;&lt;/span&gt;
+             &lt;/a&gt;
+          &lt;/li&gt; 
+          &lt;li&gt;
+             &lt;a class=&quot;footer-hyperlink&quot; href=&quot;#&quot;&gt;
+               Industrial Knowledge Transfer Program &lt;span class=&quot;glyphicon glyphicon-new-window&quot;&gt;&lt;/span&gt;
+             &lt;/a&gt;
+          &lt;/li&gt;   
+          &lt;li&gt;
+             &lt;a class=&quot;footer-hyperlink&quot; href=&quot;#&quot;&gt;
+               Online Testing &lt;span class=&quot;glyphicon glyphicon-new-window&quot;&gt;&lt;/span&gt;
+             &lt;/a&gt;
+          &lt;/li&gt; 
+          &lt;li&gt;
+             &lt;a class=&quot;footer-hyperlink&quot; href=&quot;#&quot;&gt;
+               Safety e-Resources &lt;span class=&quot;glyphicon glyphicon-new-window&quot;&gt;&lt;/span&gt;
+             &lt;/a&gt;
+          &lt;/li&gt; 
+          &lt;li&gt;
+             &lt;a class=&quot;footer-hyperlink&quot; href=&quot;#&quot;&gt;
+               Operator Training Simulations (OTS) &lt;span class=&quot;glyphicon glyphicon-new-window&quot;&gt;&lt;/span&gt;
+             &lt;/a&gt;
+          &lt;/li&gt; 
+         &lt;ul&gt;
+                     
+      &lt;/div&gt;      
+    &lt;/aside&gt;&lt;!-- .IT Help desk --&gt;
+
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;&lt;!-- .footer-top --&gt;
+
+  &lt;div class=&quot;footer-bottom&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;copyright col-xs-12 col-sm-3 col-md-3&quot;&gt;
+            &lt;span class=&quot;glyphicon glyphicon-refresh&quot;&gt;&lt;/span&gt; Last updated on 2017 May 17
+        &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;&lt;!-- .footer-bottom --&gt;
+&lt;/footer&gt; 
+    </pre>
+    </div>
+        </div>
+    </div>
+    <!-- end row -->
+
+      
+    <!-- footers row -->
+    <div class="aramco-row" id="collapse-row" style="display: none;" >
+        <h2>Collapse Panel</h2>                               
+            <div class="card-action">
+                     <div class="panel content performance-stepone-actionone-action">
+                       <div class="panel-heading panel-collapsed">
+                           <p class="title text-sa-light-blue">Prepare for your initial-year meeting  1 </p>
+                           <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                       </div>
+                       <div class="panel-body">
+                         <ul class="description">
+                        <li> Look for any cascaded goals from your business line, admin area, and/or department. </li>
+                        <li> Think about what you want to accomplish this year in your current role. </li>
+                        <li> Review feedback from last year, including areas for improvement. </li>
+                        <li> Review your career level and the competencies for which you are accountable. </li>
+                        <li> Create specific goals or expectations you can share during the meeting. </li>
+                        <li> Make sure your goals are challenging and <span class="bold"> S.M.A.R.T. </span>
+                          (Specific, Measurable, Attainable, Realistic, and Time-bound). </li>
+                       </ul>
+                         <div class="row footer">
+                            <div class="resources">
+                                <p class="heading"> Helpful resources </p>
+                                <p class="margin-minus-ten"> <span class="pdf-link">PDF</span> Initial Year Q&A to Setting Goals Guide </p>
+                                <p class="margin-minus-ten"> <span class="pdf-link">PDF</span> Initial Year Q&A to Setting Goals Guide </p>
+                                <p class="margin-minus-ten"> <span class="pdf-link">PDF</span> Initial Year Q&A to Setting Goals Guide </p>
+                                <p class="margin-minus-ten"> <span class="pdf-link">PDF</span> Initial Year Q&A to Setting Goals Guide </p>
+                                <p class="margin-minus-ten"> <span class="pdf-link">PDF</span> Initial Year Q&A to Setting Goals Guide </p>
+                            </div>
+                         </div>
+                       </div>
+                     </div>
+            </div> <!-- end of card-action -->             
+        <div class="area-line">
+        <a data-target="#snippetFooter" href="javascript: void(0);" data-toggle="collapse">View Code Snippet</a>
+    <div id="snippetFooter" class="collapse">
+    <pre class="prettyprint">
+
+    </pre>
+    </div>
+        </div>
+    </div>
+    <!-- end row -->
+
+   
+   
+    <!-- tables row -->
+    <div class="aramco-row" id="tables-row">
+        <h2>Tables</h2>         
+        <p>
+          An <strong> HTML table </strong> consists of the <strong>table </strong>element and one or more <strong> tr, th, and td </strong> elements. The <strong> tr </strong> element defines a table row, the 
+          <strong> th </strong> element defines a table header, and the <strong> td </strong> element defines a table cell. 
+        </p>  
+        <div class="table-responsive">
+        <table class="table table-striped">      
+          <tbody>
+            <tr>
+              <td class="table-border-right">[Gp-Errg] Exploration, Resources, And Reservoir Geophysics (Cp)</td>
+              <td>The purpose of these courses is to elevate the Contract Advisor and Administrator knowledge of Microsoft Office such as (Excel, Outlook, PowerPoint and Word)
+            </td>
+            </tr>
+            <tr class="bg-sa-15-gray">
+              <td class="table-border-right">[Gp-Errg] Exploration, Resources, And Reservoir Geophysics (Cp)</td>
+              <td>The purpose of these courses is to elevate the Contract Advisor and Administrator knowledge of Microsoft Office such as (Excel, Outlook, PowerPoint and Word)
+            </td>
+            </tr>
+            <tr>
+              <td class="table-border-right">[Gp-Errg] Exploration, Resources, And Reservoir Geophysics (Cp)</td>
+              <td>The purpose of these courses is to elevate the Contract Advisor and Administrator knowledge of Microsoft Office such as (Excel, Outlook, PowerPoint and Word)
+            </td>
+            </tr>
+            <tr class="bg-sa-15-gray">
+              <td class="table-border-right">[Gp-Errg] Exploration, Resources, And Reservoir Geophysics (Cp)</td>
+              <td>The purpose of these courses is to elevate the Contract Advisor and Administrator knowledge of Microsoft Office such as (Excel, Outlook, PowerPoint and Word)
+            </td>
+            </tr>
+            
+          </tbody>
+        </table>
+        </div>
+        <div class="area-line">
+                <a data-target="#stripedTableWithCheckboxes" href="javascript: void(0);" data-toggle="collapse"> View Code Snippet</a>
+    <div id="stripedTableWithCheckboxes" class="collapse">
+    <pre class="prettyprint">
+        &lt;table class=&quot;table table-striped&quot;&gt;      
+          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td class=&quot;table-border-right&quot;&gt;[Gp-Errg] Exploration, Resources, And Reservoir Geophysics (Cp)&lt;/td&gt;
+              &lt;td&gt;The purpose of these courses is to elevate the Contract Advisor and Administrator knowledge of Microsoft Office such as (Excel, Outlook, PowerPoint and Word)
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr class=&quot;bg-sa-15-gray&quot;&gt;
+              &lt;td class=&quot;table-border-right&quot;&gt;[Gp-Errg] Exploration, Resources, And Reservoir Geophysics (Cp)&lt;/td&gt;
+              &lt;td&gt;The purpose of these courses is to elevate the Contract Advisor and Administrator knowledge of Microsoft Office such as (Excel, Outlook, PowerPoint and Word)
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td class=&quot;table-border-right&quot;&gt;[Gp-Errg] Exploration, Resources, And Reservoir Geophysics (Cp)&lt;/td&gt;
+              &lt;td&gt;The purpose of these courses is to elevate the Contract Advisor and Administrator knowledge of Microsoft Office such as (Excel, Outlook, PowerPoint and Word)
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr class=&quot;bg-sa-15-gray&quot;&gt;
+              &lt;td class=&quot;table-border-right&quot;&gt;[Gp-Errg] Exploration, Resources, And Reservoir Geophysics (Cp)&lt;/td&gt;
+              &lt;td&gt;The purpose of these courses is to elevate the Contract Advisor and Administrator knowledge of Microsoft Office such as (Excel, Outlook, PowerPoint and Word)
+            &lt;/td&gt;
+            &lt;/tr&gt;
+            
+          &lt;/tbody&gt;
+        &lt;/table&gt;
+    </pre>
+    </div>
+        </div>
+        
+    </div>
+    <!-- end row -->
+
+   
+
+    <!-- collapsable groups row -->
+    <div class="aramco-row" id="collapsable-row">
+            <h2> Collapsable Panel </h2>
+            <p> 
+              The <strong> Collapsible Panel </strong> is a container that holds other controls and provides an easy expand/collapse mechanism. This section control is used to give your Coaches a clean and sleek appearance. Use the Collapsible Panel to put other controls inside of it, like a text box for example.
+            </p> 
+            <div style="background-color: #D3D3D3; padding:20px;padding-top: 40px">
+              <div class="card-action">
+                   <div class="panel content performance-stepone-actiontwo-action">
+                     <div class="panel-heading">
+                         <p class="title text-sa-light-blue">Prepare for your initial-year meeting </p>
+                         <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                     </div>
+                     <div class="panel-body">
+                       <ul class="description">
+                      <li> Look for any cascaded goals from your business line, admin area, and/or department. </li>
+                      <li> Think about what you want to accomplish this year in your current role. </li>
+                      <li> Review feedback from last year, including areas for improvement. </li>
+                      <li> Review your career level and the competencies for which you are accountable. </li>
+                      <li> Create specific goals or expectations you can share during the meeting. </li>
+                      <li> Make sure your goals are challenging and <span class="bold"> S.M.A.R.T. </span>
+                        (Specific, Measurable, Attainable, Realistic, and Time-bound). </li>
+                     </ul>
+                       <div class="row footer">
+                          <div class="resources">
+                              <p class="heading"> Helpful resources </p>
+                              <p class="margin-minus-ten"> <span class="pdf-link">PDF</span> Initial Year Q&A to Setting Goals Guide </p>
+                              <p class="margin-minus-ten"> <span class="pdf-link">PDF</span> Initial Year Q&A to Setting Goals Guide </p>
+                              <p class="margin-minus-ten"> <span class="pdf-link">PDF</span> Initial Year Q&A to Setting Goals Guide </p>
+                          </div>
+                        </div>
+                     </div>
+                   </div>
+              </div> <!-- end of card-action -->  
+            </div>
+                                         
+                
+                <div class="area-line">
+                <a data-target="#acordeonCode" href="javascript: void(0);" data-toggle="collapse"> View Code Snippet</a>
+    <div id="acordeonCode" class="collapse">
+    <pre class="prettyprint">
+       &lt;div class=&quot;card-action&quot;&gt;
+                   &lt;div class=&quot;panel content performance-stepone-actiontwo-action&quot;&gt;
+                     &lt;div class=&quot;panel-heading&quot;&gt;
+                         &lt;p class=&quot;title text-sa-light-blue&quot;&gt;Prepare for your initial-year meeting &lt;/p&gt;
+                         &lt;span class=&quot;pull-right clickable&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-chevron-up&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+                     &lt;/div&gt;
+                     &lt;div class=&quot;panel-body&quot;&gt;
+                       &lt;ul class=&quot;description&quot;&gt;
+                      &lt;li&gt; Look for any cascaded goals from your business line, admin area, and/or department. &lt;/li&gt;
+                      &lt;li&gt; Think about what you want to accomplish this year in your current role. &lt;/li&gt;
+                      &lt;li&gt; Review feedback from last year, including areas for improvement. &lt;/li&gt;
+                      &lt;li&gt; Review your career level and the competencies for which you are accountable. &lt;/li&gt;
+                      &lt;li&gt; Create specific goals or expectations you can share during the meeting. &lt;/li&gt;
+                      &lt;li&gt; Make sure your goals are challenging and &lt;span class=&quot;bold&quot;&gt; S.M.A.R.T. &lt;/span&gt;
+                        (Specific, Measurable, Attainable, Realistic, and Time-bound). &lt;/li&gt;
+                     &lt;/ul&gt;
+                       &lt;div class=&quot;row footer&quot;&gt;
+                          &lt;div class=&quot;resources&quot;&gt;
+                              &lt;p class=&quot;heading&quot;&gt; Helpful resources &lt;/p&gt;
+                              &lt;p class=&quot;margin-minus-ten&quot;&gt; &lt;span class=&quot;pdf-link&quot;&gt;PDF&lt;/span&gt; Initial Year Q&amp;A to Setting Goals Guide &lt;/p&gt;
+                              &lt;p class=&quot;margin-minus-ten&quot;&gt; &lt;span class=&quot;pdf-link&quot;&gt;PDF&lt;/span&gt; Initial Year Q&amp;A to Setting Goals Guide &lt;/p&gt;
+                              &lt;p class=&quot;margin-minus-ten&quot;&gt; &lt;span class=&quot;pdf-link&quot;&gt;PDF&lt;/span&gt; Initial Year Q&amp;A to Setting Goals Guide &lt;/p&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                     &lt;/div&gt;
+                   &lt;/div&gt;
+              &lt;/div&gt;
+    </pre>
+    </div>
+                </div>
+    </div>
+    <!-- end row -->
+
+
+
+     <!-- sticky row -->
+    <div class="aramco-row" id="sticky-row">
+        <h2>Sticky Panel</h2>     
+        <p> The <strong> Sticky Panel </strong> will stick to the left/right side when you reach its scroll position. </p>    
+        <div class="table-responsive">
+            <div class="col-sm-4 col-md-4">
+             <div class="card-tips bg-sa-light-green">
+                 <div class="content">
+                   <p class="title text-sa-white">Reviewer Tips </p>
+                   <ul class="description text-sa-white">
+                    <li> Provide your employees with guidance on how they can align their goals to organizational objectives. </li>
+                    <li> Conduct a meaningful initial meeting that clearly defines goals and expectations for the year. </li>
+                   </ul>
+                 </div>
+             </div> <!-- end of card-category -->
+          </div> <!-- end of col-sm-4 col-md-4 -->    
+        </div>
+        <div class="area-line">
+                <a data-target="#stickyCode" href="javascript: void(0);" data-toggle="collapse"> View Code Snippet</a>
+    <div id="stickyCode" class="collapse">
+    <pre class="prettyprint">
+       &lt;div class=&quot;col-sm-4 col-md-4&quot;&gt;
+             &lt;div class=&quot;card-tips bg-sa-light-green&quot;&gt;
+                 &lt;div class=&quot;content&quot;&gt;
+                   &lt;p class=&quot;title text-sa-white&quot;&gt;Reviewer Tips &lt;/p&gt;
+                   &lt;ul class=&quot;description text-sa-white&quot;&gt;
+                    &lt;li&gt; Provide your employees with guidance on how they can align their goals to organizational objectives. &lt;/li&gt;
+                    &lt;li&gt; Conduct a meaningful initial meeting that clearly defines goals and expectations for the year. &lt;/li&gt;
+                   &lt;/ul&gt;
+                 &lt;/div&gt;
+             &lt;/div&gt; 
+          &lt;/div&gt;
+    </pre>
+    </div>
+        </div>
+        
+    </div>
+    <!-- end row -->
+
+    
+
+    <!-- sticky row -->
+    <div class="aramco-row" id="timeline-row">
+        <h2>Timeline</h2>      
+        <p> A <strong> Vertical timeline </strong> bar where on desktop it shows as timeline-bar in middle and event boxes on both sides or one side. On smaller mobile screen, the timeline-bar on the left and all event boxes on the right. </p>   
+        <section class="section-spacing text-center bg-sa-white timeline-start">
+                 <div class="container">
+                    <div class="container-fluid">
+                       <div class="row">
+                          <div class="col-md-6 col-sm-6 col-lg-6">
+                            <div class="timeline-headline employee-headline-align text-sa-light-blue"> <span> Employees’ timeline </span> </div>
+                          </div>
+                          <div class="col-md-6 col-sm-6 col-lg-6">
+                            <div class="timeline-headline reviewer-headline-align text-sa-light-green"> <span> Reviwers’ timeline </span> </div>
+                          </div>
+                       </div>
+                       <div class="row">
+                         <div class="col-md-6 col-sm-6 col-lg-6">
+                            <ul class="timeline employee-timeline">
+                               <li class="timeline timeline-first-item wow bounceInUp">
+                                  <div class="timeline-time">AUG 30, 2017</div>
+                                  <div class="timeline-badge"></div>
+                                  <div class="timeline-panel">
+                                     <div class="timeline-heading">
+                                        <h6 class="timeline-title text-sa-light-blue"> 2017 MID-YEAR REVIEW </span> </h6>
+                                     </div>
+                                     <div class="timeline-body">
+                                        <p> Business lines/admin areas create and cascade goals for 2017.</p>
+                                        <span class="timeline-link"> <span class="tag-href"><i class="fa fa-link"></i></span> <span class="text"> Performance Step 3: Evaluate performance </span> <i class="fa fa-chevron-right"></i> </span>
+                                     </div>
+                                  </div>
+                               </li>
+                               <li class="divider-timeline-li"><!-- Divider --></li>
+                               <li class="timeline wow bounceInUp">
+                                  <div class="timeline-time">OCT 31, 2017</div>
+                                  <div class="timeline-badge"></div>
+                                  <div class="timeline-panel">
+                                     <div class="timeline-heading">
+                                        <h6 class="timeline-title text-sa-light-blue"> 2017 MID-YEAR REVIEW </span> </h6>
+                                     </div>
+                                     <div class="timeline-body">
+                                        <p> Reviewers verbally communicate 2016 ratings to employees.</p>
+                                        <span class="timeline-link"> <span class="tag-href"><i class="fa fa-link"></i></span> <span class="text"> Performance Step 3: Evaluate performance </span> <i class="fa fa-chevron-right"></i> </span>
+                                     </div>
+                                  </div>
+                               </li>
+                               <li class="divider-timeline-li"><!-- Divider --></li>
+                               <li class="timeline wow bounceInUp">
+                                 <div class="timeline-time">OCT 31, 2017</div>
+                                  <div class="timeline-badge"></div>
+                                  <div class="timeline-panel">
+                                     <div class="timeline-heading">
+                                        <h6 class="timeline-title text-sa-light-blue"> 2017 MID-YEAR REVIEW </span> </h6>
+                                     </div>
+                                     <div class="timeline-body">
+                                        <p> Reviewers verbally communicate 2016 ratings to employees. </p>
+                                        <span class="timeline-link"> <span class="tag-href"><i class="fa fa-link"></i></span> <span class="text"> Performance Step 3: Evaluate performance </span> <i class="fa fa-chevron-right"></i> </span>
+                                     </div>
+                                  </div>
+                               </li>
+                               <li class="divider-timeline-li"><!-- Divider --></li>
+                               <li class="timeline wow bounceInUp">
+                                  <div class="timeline-time">OCT 31, 2017</div>
+                                  <div class="timeline-badge"></div>
+                                  <div class="timeline-panel">
+                                     <div class="timeline-heading">
+                                        <h6 class="timeline-title text-sa-light-blue"> 2017 YEAR END REVIEW </span> </h6>
+                                     </div>
+                                     <div class="timeline-body">
+                                        <p> Reviewers hold 2016 year-end meetings (Employees acknowledge in the system). </p>
+                                        <span class="timeline-link"> <span class="tag-href"><i class="fa fa-link"></i></span> <span class="text"> Performance Step 3: Evaluate performance </span> <i class="fa fa-chevron-right"></i> </span>
+                                     </div>
+                                  </div>
+                               </li>
+                               <li class="divider-timeline-li"><!-- Divider --></li>
+                               <li class="timeline wow bounceInUp">
+                                  <div class="timeline-time">OCT 31, 2017</div>
+                                  <div class="timeline-badge"></div>
+                                  <div class="timeline-panel">
+                                     <div class="timeline-heading">
+                                        <h6 class="timeline-title text-sa-light-blue"> 2018 INITIAL-YEAR MEETING </span> </h6>
+                                     </div>
+                                     <div class="timeline-body">
+                                        <p> Employees agree/disagree and add comments to 2016 ratings. </p>
+                                        <span class="timeline-link"> <span class="tag-href"><i class="fa fa-link"></i></span> <span class="text"> Performance Step 3: Evaluate performance </span> <i class="fa fa-chevron-right"></i> </span>
+                                     </div>
+                                  </div>
+                               </li>
+                            </ul>
+                         </div>
+
+                          <div class="col-md-6 col-sm-6 col-lg-6 reviewer-timeline-margin">
+                             <ul class="timeline reviewer-timeline">
+                                <li class="timeline timeline-first-item wow bounceInUp">
+                                   <div class="timeline-badge"></div>
+                                   <div class="timeline-panel">
+                                      <div class="timeline-heading">
+                                         <h6 class="timeline-title text-sa-light-green"> 2017 MID-YEAR REVIEW </span> </h6>
+                                      </div>
+                                      <div class="timeline-body">
+                                         <p> Business lines/admin areas create and cascade goals for 2017.</p>
+                                         <span class="timeline-link"> <span class="tag-href"><i class="fa fa-link"></i></span> <span class="text"> Performance Step 3: Evaluate performance </span> <i class="fa fa-chevron-right"></i> </span>
+                                      </div>
+                                   </div>
+                                </li>
+                                <li class="divider-reviewer-li"><!-- Divider --></li>
+                                <li class="timeline wow bounceInUp">
+                                   <div class="timeline-badge"></div>
+                                   <div class="timeline-panel">
+                                      <div class="timeline-heading">
+                                         <h6 class="timeline-title text-sa-light-green"> 2017 MULTI-SOURCE REVIEW </span> </h6>
+                                      </div>
+                                      <div class="timeline-body">
+                                         <p> Reviewers verbally communicate 2016 ratings to employees.</p>
+                                         <span class="timeline-link"> <span class="tag-href"><i class="fa fa-link"></i></span> <span class="text"> Performance Step 3: Evaluate performance </span> <i class="fa fa-chevron-right"></i> </span>
+                                      </div>
+                                   </div>
+                                </li>
+                                <li class="divider-reviewer-li"><!-- Divider --></li>
+                                <li class="timeline wow bounceInUp">
+                                   <div class="timeline-badge"></div>
+                                   <div class="timeline-panel">
+                                      <div class="timeline-heading">
+                                         <h6 class="timeline-title text-sa-light-green"> 2017 MULTI-SOURCE REVIEW </span> </h6>
+                                      </div>
+                                      <div class="timeline-body">
+                                         <p> Reviewers verbally communicate 2016 ratings to employees. </p>
+                                         <span class="timeline-link"> <span class="tag-href"><i class="fa fa-link"></i></span> <span class="text"> Performance Step 3: Evaluate performance </span> <i class="fa fa-chevron-right"></i> </span>
+                                      </div>
+                                   </div>
+                                </li>
+                                <li class="divider-reviewer-li"><!-- Divider --></li>
+                                <li class="timeline wow bounceInUp">
+                                   <div class="timeline-badge"></div>
+                                   <div class="timeline-panel">
+                                      <div class="timeline-heading">
+                                         <h6 class="timeline-title text-sa-light-green"> 2017 GOAL MODIFICATION </span> </h6>
+                                      </div>
+                                      <div class="timeline-body">
+                                         <p> Reviewers hold 2016 year-end meetings (Employees acknowledge in the system). </p>
+                                         <span class="timeline-link"> <span class="tag-href"><i class="fa fa-link"></i></span> <span class="text"> Performance Step 3: Evaluate performance </span> <i class="fa fa-chevron-right"></i> </span>
+                                      </div>
+                                   </div>
+                                </li>
+                                <li class="divider-reviewer-li"><!-- Divider --></li>
+                                <li class="timeline wow bounceInUp">
+                                   <div class="timeline-badge"></div>
+                                   <div class="timeline-panel">
+                                      <div class="timeline-heading">
+                                         <h6 class="timeline-title text-sa-light-green"> 2017 RATING SUBMISSIONBY LEADERS </span> </h6>
+                                      </div>
+                                      <div class="timeline-body">
+                                         <p> Employees agree/disagree and add comments to 2016 ratings. </p>
+                                         <span class="timeline-link"> <span class="tag-href"><i class="fa fa-link"></i></span> <span class="text"> Performance Step 3: Evaluate performance </span> <i class="fa fa-chevron-right"></i> </span>
+                                      </div>
+                                   </div>
+                                </li>
+                             </ul>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                </section>
+        <div class="area-line">
+                <a data-target="#timelineCode" href="javascript: void(0);" data-toggle="collapse"> View Code Snippet</a>
+    <div id="timelineCode" class="collapse">
+    <pre class="prettyprint">
+       &lt;section class=&quot;section-spacing text-center bg-sa-white timeline-start&quot;&gt;
+                 &lt;div class=&quot;container&quot;&gt;
+                    &lt;div class=&quot;container-fluid&quot;&gt;
+                       &lt;div class=&quot;row&quot;&gt;
+                          &lt;div class=&quot;col-md-6 col-sm-6 col-lg-6&quot;&gt;
+                            &lt;div class=&quot;timeline-headline employee-headline-align text-sa-light-blue&quot;&gt; &lt;span&gt; Employees&rsquo; timeline &lt;/span&gt; &lt;/div&gt;
+                          &lt;/div&gt;
+                          &lt;div class=&quot;col-md-6 col-sm-6 col-lg-6&quot;&gt;
+                            &lt;div class=&quot;timeline-headline reviewer-headline-align text-sa-light-green&quot;&gt; &lt;span&gt; Reviwers&rsquo; timeline &lt;/span&gt; &lt;/div&gt;
+                          &lt;/div&gt;
+                       &lt;/div&gt;
+                       &lt;div class=&quot;row&quot;&gt;
+                         &lt;div class=&quot;col-md-6 col-sm-6 col-lg-6&quot;&gt;
+                            &lt;ul class=&quot;timeline employee-timeline&quot;&gt;
+                               &lt;li class=&quot;timeline timeline-first-item wow bounceInUp&quot;&gt;
+                                  &lt;div class=&quot;timeline-time&quot;&gt;AUG 30, 2017&lt;/div&gt;
+                                  &lt;div class=&quot;timeline-badge&quot;&gt;&lt;/div&gt;
+                                  &lt;div class=&quot;timeline-panel&quot;&gt;
+                                     &lt;div class=&quot;timeline-heading&quot;&gt;
+                                        &lt;h6 class=&quot;timeline-title text-sa-light-blue&quot;&gt; 2017 MID-YEAR REVIEW &lt;/span&gt; &lt;/h6&gt;
+                                     &lt;/div&gt;
+                                     &lt;div class=&quot;timeline-body&quot;&gt;
+                                        &lt;p&gt; Business lines/admin areas create and cascade goals for 2017.&lt;/p&gt;
+                                        &lt;span class=&quot;timeline-link&quot;&gt; &lt;span class=&quot;tag-href&quot;&gt;&lt;i class=&quot;fa fa-link&quot;&gt;&lt;/i&gt;&lt;/span&gt; &lt;span class=&quot;text&quot;&gt; Performance Step 3: Evaluate performance &lt;/span&gt; &lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+                                     &lt;/div&gt;
+                                  &lt;/div&gt;
+                               &lt;/li&gt;
+                               &lt;li class=&quot;divider-timeline-li&quot;&gt;&lt;!-- Divider --&gt;&lt;/li&gt;
+                               &lt;li class=&quot;timeline wow bounceInUp&quot;&gt;
+                                  &lt;div class=&quot;timeline-time&quot;&gt;OCT 31, 2017&lt;/div&gt;
+                                  &lt;div class=&quot;timeline-badge&quot;&gt;&lt;/div&gt;
+                                  &lt;div class=&quot;timeline-panel&quot;&gt;
+                                     &lt;div class=&quot;timeline-heading&quot;&gt;
+                                        &lt;h6 class=&quot;timeline-title text-sa-light-blue&quot;&gt; 2017 MID-YEAR REVIEW &lt;/span&gt; &lt;/h6&gt;
+                                     &lt;/div&gt;
+                                     &lt;div class=&quot;timeline-body&quot;&gt;
+                                        &lt;p&gt; Reviewers verbally communicate 2016 ratings to employees.&lt;/p&gt;
+                                        &lt;span class=&quot;timeline-link&quot;&gt; &lt;span class=&quot;tag-href&quot;&gt;&lt;i class=&quot;fa fa-link&quot;&gt;&lt;/i&gt;&lt;/span&gt; &lt;span class=&quot;text&quot;&gt; Performance Step 3: Evaluate performance &lt;/span&gt; &lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+                                     &lt;/div&gt;
+                                  &lt;/div&gt;
+                               &lt;/li&gt;
+                               &lt;li class=&quot;divider-timeline-li&quot;&gt;&lt;!-- Divider --&gt;&lt;/li&gt;
+                               &lt;li class=&quot;timeline wow bounceInUp&quot;&gt;
+                                 &lt;div class=&quot;timeline-time&quot;&gt;OCT 31, 2017&lt;/div&gt;
+                                  &lt;div class=&quot;timeline-badge&quot;&gt;&lt;/div&gt;
+                                  &lt;div class=&quot;timeline-panel&quot;&gt;
+                                     &lt;div class=&quot;timeline-heading&quot;&gt;
+                                        &lt;h6 class=&quot;timeline-title text-sa-light-blue&quot;&gt; 2017 MID-YEAR REVIEW &lt;/span&gt; &lt;/h6&gt;
+                                     &lt;/div&gt;
+                                     &lt;div class=&quot;timeline-body&quot;&gt;
+                                        &lt;p&gt; Reviewers verbally communicate 2016 ratings to employees. &lt;/p&gt;
+                                        &lt;span class=&quot;timeline-link&quot;&gt; &lt;span class=&quot;tag-href&quot;&gt;&lt;i class=&quot;fa fa-link&quot;&gt;&lt;/i&gt;&lt;/span&gt; &lt;span class=&quot;text&quot;&gt; Performance Step 3: Evaluate performance &lt;/span&gt; &lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+                                     &lt;/div&gt;
+                                  &lt;/div&gt;
+                               &lt;/li&gt;
+                               &lt;li class=&quot;divider-timeline-li&quot;&gt;&lt;!-- Divider --&gt;&lt;/li&gt;
+                               &lt;li class=&quot;timeline wow bounceInUp&quot;&gt;
+                                  &lt;div class=&quot;timeline-time&quot;&gt;OCT 31, 2017&lt;/div&gt;
+                                  &lt;div class=&quot;timeline-badge&quot;&gt;&lt;/div&gt;
+                                  &lt;div class=&quot;timeline-panel&quot;&gt;
+                                     &lt;div class=&quot;timeline-heading&quot;&gt;
+                                        &lt;h6 class=&quot;timeline-title text-sa-light-blue&quot;&gt; 2017 YEAR END REVIEW &lt;/span&gt; &lt;/h6&gt;
+                                     &lt;/div&gt;
+                                     &lt;div class=&quot;timeline-body&quot;&gt;
+                                        &lt;p&gt; Reviewers hold 2016 year-end meetings (Employees acknowledge in the system). &lt;/p&gt;
+                                        &lt;span class=&quot;timeline-link&quot;&gt; &lt;span class=&quot;tag-href&quot;&gt;&lt;i class=&quot;fa fa-link&quot;&gt;&lt;/i&gt;&lt;/span&gt; &lt;span class=&quot;text&quot;&gt; Performance Step 3: Evaluate performance &lt;/span&gt; &lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+                                     &lt;/div&gt;
+                                  &lt;/div&gt;
+                               &lt;/li&gt;
+                               &lt;li class=&quot;divider-timeline-li&quot;&gt;&lt;!-- Divider --&gt;&lt;/li&gt;
+                               &lt;li class=&quot;timeline wow bounceInUp&quot;&gt;
+                                  &lt;div class=&quot;timeline-time&quot;&gt;OCT 31, 2017&lt;/div&gt;
+                                  &lt;div class=&quot;timeline-badge&quot;&gt;&lt;/div&gt;
+                                  &lt;div class=&quot;timeline-panel&quot;&gt;
+                                     &lt;div class=&quot;timeline-heading&quot;&gt;
+                                        &lt;h6 class=&quot;timeline-title text-sa-light-blue&quot;&gt; 2018 INITIAL-YEAR MEETING &lt;/span&gt; &lt;/h6&gt;
+                                     &lt;/div&gt;
+                                     &lt;div class=&quot;timeline-body&quot;&gt;
+                                        &lt;p&gt; Employees agree/disagree and add comments to 2016 ratings. &lt;/p&gt;
+                                        &lt;span class=&quot;timeline-link&quot;&gt; &lt;span class=&quot;tag-href&quot;&gt;&lt;i class=&quot;fa fa-link&quot;&gt;&lt;/i&gt;&lt;/span&gt; &lt;span class=&quot;text&quot;&gt; Performance Step 3: Evaluate performance &lt;/span&gt; &lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+                                     &lt;/div&gt;
+                                  &lt;/div&gt;
+                               &lt;/li&gt;
+                            &lt;/ul&gt;
+                         &lt;/div&gt;
+
+                          &lt;div class=&quot;col-md-6 col-sm-6 col-lg-6 reviewer-timeline-margin&quot;&gt;
+                             &lt;ul class=&quot;timeline reviewer-timeline&quot;&gt;
+                                &lt;li class=&quot;timeline timeline-first-item wow bounceInUp&quot;&gt;
+                                   &lt;div class=&quot;timeline-badge&quot;&gt;&lt;/div&gt;
+                                   &lt;div class=&quot;timeline-panel&quot;&gt;
+                                      &lt;div class=&quot;timeline-heading&quot;&gt;
+                                         &lt;h6 class=&quot;timeline-title text-sa-light-green&quot;&gt; 2017 MID-YEAR REVIEW &lt;/span&gt; &lt;/h6&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class=&quot;timeline-body&quot;&gt;
+                                         &lt;p&gt; Business lines/admin areas create and cascade goals for 2017.&lt;/p&gt;
+                                         &lt;span class=&quot;timeline-link&quot;&gt; &lt;span class=&quot;tag-href&quot;&gt;&lt;i class=&quot;fa fa-link&quot;&gt;&lt;/i&gt;&lt;/span&gt; &lt;span class=&quot;text&quot;&gt; Performance Step 3: Evaluate performance &lt;/span&gt; &lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+                                      &lt;/div&gt;
+                                   &lt;/div&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;divider-reviewer-li&quot;&gt;&lt;!-- Divider --&gt;&lt;/li&gt;
+                                &lt;li class=&quot;timeline wow bounceInUp&quot;&gt;
+                                   &lt;div class=&quot;timeline-badge&quot;&gt;&lt;/div&gt;
+                                   &lt;div class=&quot;timeline-panel&quot;&gt;
+                                      &lt;div class=&quot;timeline-heading&quot;&gt;
+                                         &lt;h6 class=&quot;timeline-title text-sa-light-green&quot;&gt; 2017 MULTI-SOURCE REVIEW &lt;/span&gt; &lt;/h6&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class=&quot;timeline-body&quot;&gt;
+                                         &lt;p&gt; Reviewers verbally communicate 2016 ratings to employees.&lt;/p&gt;
+                                         &lt;span class=&quot;timeline-link&quot;&gt; &lt;span class=&quot;tag-href&quot;&gt;&lt;i class=&quot;fa fa-link&quot;&gt;&lt;/i&gt;&lt;/span&gt; &lt;span class=&quot;text&quot;&gt; Performance Step 3: Evaluate performance &lt;/span&gt; &lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+                                      &lt;/div&gt;
+                                   &lt;/div&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;divider-reviewer-li&quot;&gt;&lt;!-- Divider --&gt;&lt;/li&gt;
+                                &lt;li class=&quot;timeline wow bounceInUp&quot;&gt;
+                                   &lt;div class=&quot;timeline-badge&quot;&gt;&lt;/div&gt;
+                                   &lt;div class=&quot;timeline-panel&quot;&gt;
+                                      &lt;div class=&quot;timeline-heading&quot;&gt;
+                                         &lt;h6 class=&quot;timeline-title text-sa-light-green&quot;&gt; 2017 MULTI-SOURCE REVIEW &lt;/span&gt; &lt;/h6&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class=&quot;timeline-body&quot;&gt;
+                                         &lt;p&gt; Reviewers verbally communicate 2016 ratings to employees. &lt;/p&gt;
+                                         &lt;span class=&quot;timeline-link&quot;&gt; &lt;span class=&quot;tag-href&quot;&gt;&lt;i class=&quot;fa fa-link&quot;&gt;&lt;/i&gt;&lt;/span&gt; &lt;span class=&quot;text&quot;&gt; Performance Step 3: Evaluate performance &lt;/span&gt; &lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+                                      &lt;/div&gt;
+                                   &lt;/div&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;divider-reviewer-li&quot;&gt;&lt;!-- Divider --&gt;&lt;/li&gt;
+                                &lt;li class=&quot;timeline wow bounceInUp&quot;&gt;
+                                   &lt;div class=&quot;timeline-badge&quot;&gt;&lt;/div&gt;
+                                   &lt;div class=&quot;timeline-panel&quot;&gt;
+                                      &lt;div class=&quot;timeline-heading&quot;&gt;
+                                         &lt;h6 class=&quot;timeline-title text-sa-light-green&quot;&gt; 2017 GOAL MODIFICATION &lt;/span&gt; &lt;/h6&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class=&quot;timeline-body&quot;&gt;
+                                         &lt;p&gt; Reviewers hold 2016 year-end meetings (Employees acknowledge in the system). &lt;/p&gt;
+                                         &lt;span class=&quot;timeline-link&quot;&gt; &lt;span class=&quot;tag-href&quot;&gt;&lt;i class=&quot;fa fa-link&quot;&gt;&lt;/i&gt;&lt;/span&gt; &lt;span class=&quot;text&quot;&gt; Performance Step 3: Evaluate performance &lt;/span&gt; &lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+                                      &lt;/div&gt;
+                                   &lt;/div&gt;
+                                &lt;/li&gt;
+                                &lt;li class=&quot;divider-reviewer-li&quot;&gt;&lt;!-- Divider --&gt;&lt;/li&gt;
+                                &lt;li class=&quot;timeline wow bounceInUp&quot;&gt;
+                                   &lt;div class=&quot;timeline-badge&quot;&gt;&lt;/div&gt;
+                                   &lt;div class=&quot;timeline-panel&quot;&gt;
+                                      &lt;div class=&quot;timeline-heading&quot;&gt;
+                                         &lt;h6 class=&quot;timeline-title text-sa-light-green&quot;&gt; 2017 RATING SUBMISSIONBY LEADERS &lt;/span&gt; &lt;/h6&gt;
+                                      &lt;/div&gt;
+                                      &lt;div class=&quot;timeline-body&quot;&gt;
+                                         &lt;p&gt; Employees agree/disagree and add comments to 2016 ratings. &lt;/p&gt;
+                                         &lt;span class=&quot;timeline-link&quot;&gt; &lt;span class=&quot;tag-href&quot;&gt;&lt;i class=&quot;fa fa-link&quot;&gt;&lt;/i&gt;&lt;/span&gt; &lt;span class=&quot;text&quot;&gt; Performance Step 3: Evaluate performance &lt;/span&gt; &lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt; &lt;/span&gt;
+                                      &lt;/div&gt;
+                                   &lt;/div&gt;
+                                &lt;/li&gt;
+                             &lt;/ul&gt;
+                          &lt;/div&gt;
+                       &lt;/div&gt;
+                    &lt;/div&gt;
+                 &lt;/div&gt;
+                &lt;/section&gt;
+    </pre>
+    </div>
+        </div>
+        
+    </div>
+    <!-- end row -->
+
+
+    </div>
+                <!-- end container -->
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>    
+
+</div>
+
+
+
+
+</body>
+  <!--  jQuery and Bootstrap core files    -->
+  <script src="assets/js/jquery.js" type="text/javascript"></script>
+	<script src="assets/js/jquery-ui.custom.min.js" type="text/javascript"></script>
+	<script src="bootstrap3/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="assets/js/ekko-lightbox.min.js" type="text/javascript"></script>
+
+    <!--  Aramco StyleGuide Core javascript 	 -->
+	   <script src="assets/js/styleguide.js"></script>
+     <script src="assets/js/main.js"></script> 
+
+
+    <script>
+        var transparent = true;
+        var header_height;
+        var fixed_section;
+        var floating = false;
+
+        $().ready(function(){
+            suggestions_distance = $("#suggestions").offset();
+            header_height = $('.parallax').outerHeight() + 20;
+            pay_height = $('.fixed-section').outerHeight();
+            fixed_section = $('.fixed-section');
+
+            if($(document).width() > 768){
+                activateScrollCheck();
+            }
+
+        });
+
+
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });  
+
+        function activateScrollCheck(){
+            $(window).on('scroll',function(){
+                checkScrollForPresentationNavbar();
+            });
+        }
+
+        var checkScrollForPresentationNavbar = debounce(function() {
+        	if($(this).scrollTop() > 470 ) {
+                if(transparent) {
+                    transparent = false;
+                    $('nav[role="navigation"]').removeClass('navbar-transparent').addClass('navbar-small');
+                    $('#issueButton').addClass('btn-info').removeClass('btn-neutral');
+
+                }
+            } else {
+                if( !transparent ) {
+                    transparent = true;
+                    $('nav[role="navigation"]').addClass('navbar-transparent').removeClass('navbar-small');
+                    $('#issueButton').addClass('btn-neutral').removeClass('btn-info');
+                }
+            }
+
+            if($(this).scrollTop() > header_height ) {
+                    if(!floating) {
+                        floating = true;
+                        fixed_section.addClass('float');
+                    }
+                } else {
+                    if( floating ) {
+                        floating = false;
+                        fixed_section.removeClass('float');
+                    }
+                }
+        }, 4);
+
+    </script>
+
+
+</html>
